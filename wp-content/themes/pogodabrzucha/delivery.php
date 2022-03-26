@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template name: Delivery
  * @package WordPress
@@ -9,10 +10,10 @@
 <section class="section-delivery">
     <div class="section-delivery__box">
         <div class="section-delivery__header">
-            <h2><?php the_field('delivery_header');?></h2>
+            <h2><?php the_field('delivery_header'); ?></h2>
         </div>
         <div class="section-delivery__subheader">
-            <p><?php the_field('delivery_subheader');?></p>
+            <p><?php the_field('delivery_subheader'); ?></p>
         </div>
     </div>
 
@@ -40,10 +41,8 @@
                             <a type="submit" class="delivery__form-button button button--primary" onclick="getVal()">
                                 sprawdź
                             </a>
-                            <img class="decoration decorationP2"
-                                src="/wp-content/uploads/2022/03/chmurka-button-gorna.png">
-                            <img class="decoration decorationP3"
-                                src="/wp-content/uploads/2022/03/chmurka-button-dolna-1.png">
+                            <img class="decoration decorationP2" src="/wp-content/uploads/2022/03/chmurka-button-gorna.png">
+                            <img class="decoration decorationP3" src="/wp-content/uploads/2022/03/chmurka-button-dolna-1.png">
                         </div>
                     </div>
                     <div class="sub-mobile">
@@ -58,9 +57,6 @@
         </div>
     </section>
 
-    <?php include 'popup.php'?>
+    <?php include 'popup.php' ?>
 
-    <script src="/wp-content/themes/pogodabrzucha/assets/js/post-codes.js"></script>
-    <script src="/wp-content/themes/pogodabrzucha/assets/js/delivery.js"></script>
-    <script src="/wp-content/themes/pogodabrzucha/assets/js/main.js"></script>
 </section>
