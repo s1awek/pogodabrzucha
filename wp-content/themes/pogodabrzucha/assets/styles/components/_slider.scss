@@ -15,7 +15,7 @@
     margin: auto;
     background-image: url(/wp-content/uploads/2022/03/Intersection-8.png);
     background-size: cover;
-    min-height: 65rem;
+    min-height: 60rem;
     border-radius: 40px;
     margin-bottom: 20rem;
     background-repeat: no-repeat;
@@ -24,9 +24,7 @@
 
 /* Hide the images by default */
 
-.mySlides {
-    display: none;
-}
+.mySlides {}
 
 
 /* Next & previous buttons */
@@ -111,6 +109,7 @@
     from {
         opacity: 0.4;
     }
+
     to {
         opacity: 1;
     }
@@ -120,6 +119,7 @@
     from {
         opacity: 0.4;
     }
+
     to {
         opacity: 1;
     }
@@ -129,7 +129,8 @@
     max-width: 60rem;
     position: absolute;
     bottom: -2%;
-    left: 61rem;
+    left: 70rem;
+
     @include respond(phone) {
         position: inherit;
         top: auto;
@@ -138,6 +139,7 @@
         margin: 0 auto;
         padding-top: 10rem;
     }
+
     @include respond(medium-phone) {
         padding-top: 1rem;
     }
@@ -160,7 +162,7 @@
 }
 
 .slider-info {
-    max-width: 76rem;
+    max-width: 85rem;
     position: absolute;
     bottom: -9rem;
     background-position: center;
@@ -168,64 +170,79 @@
     padding: 12rem 12rem 16rem 12rem;
     color: #ffebe6;
     left: -5rem;
+    transition: all 2s;
+
     @include respond(phone) {
         bottom: -6rem;
+
         .diet-banner-header {
             font-size: 4rem;
             padding-bottom: 2rem;
         }
     }
+
     @include respond(medium-phone) {
         padding: 12rem 2rem 16rem 4rem;
     }
+
     .diet-banner-buttons {
         padding-top: 2rem;
         display: flex;
         column-gap: 2rem;
+
         a {
             padding: 0.2rem 4rem;
         }
+
         .border-button {
             color: $white;
         }
+
         .gold-button {
             font-size: 2.2rem;
         }
     }
+
     .slider-price-div {
         min-width: 19rem;
         min-height: 15rem;
         position: absolute;
-        right: 14%;
-        top: 5%;
+        right: 6%;
+        top: 14%;
         z-index: 9;
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(/wp-content/uploads/2022/03/chmurka-header-diet.png);
+
         p {
             font-size: 2.4rem;
-            font-weight: 600;
+            font-weight: 400;
             color: #58232b;
             position: absolute;
             top: 30%;
             left: 20%;
         }
+
         @include respond(phone) {
             background-image: radial-gradient(#e87641, #e87641);
             border-radius: 35px;
             min-height: 7rem;
             right: 7%;
             top: 15%;
+
             p {
                 color: $white;
                 top: 24%;
             }
         }
     }
+
     .diet-banner-kcal {
         font-size: 1.8rem;
         padding-top: 2rem;
         margin-bottom: 0;
+        font-weight: 600;
+
         @include respond(phone) {
             padding-top: 0;
             border-top: 1px dashed #83434d;
@@ -233,15 +250,17 @@
             display: inline;
         }
     }
+
     .diet-banner-desc {
         font-size: 1.6rem;
-        text-shadow: 3px 3px 16px #170801;
         padding-top: 2rem;
         margin-bottom: 0;
     }
+
     .diet-banner-buttons {
         .gold-button {
             color: $header;
+
             @include respond(phone) {
                 background-image: radial-gradient(#e87641, #e87641);
                 color: $white !important;
@@ -251,10 +270,12 @@
             }
         }
     }
+
     .diet-banner-kcal,
     .diet-banner-desc,
     .diet-banner-buttons {
         margin-left: 5rem;
+
         @include respond(phone) {
             margin-left: 0;
         }

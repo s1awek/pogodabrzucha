@@ -1,12 +1,30 @@
 #cookies {
-    position: absolute;
-    top: 8%;
-    right: 20%;
+    position: fixed;
+    bottom: 40px;
+    right: 186px;
     background-image: url(/wp-content/uploads/2022/03/cookies-desc.png);
     min-height: 390px;
     min-width: 400px;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 999;
+
+    @include respond(phone) {
+        background-image: url(/wp-content/uploads/2022/03/cookies-phone.png);
+        top: 4%;
+        right: 4%;
+        width: 100%;
+        min-width: auto;
+        background-size: contain;
+    }
+
+    @include respond(small-phone) {
+        min-width: 100vw;
+        right: auto;
+        left: 0;
+        min-height: 170px;
+    }
+
     >div {
         position: relative;
         width: 100%;
@@ -14,32 +32,139 @@
         max-width: 300px;
         margin: 0 auto;
         text-align: center;
+
+        @include respond(phone) {
+            max-width: 80vw;
+        }
     }
-    #cookies_powiadomienie {
-        font-size: 1.6rem;
-        max-width: 399px;
+
+    span {
         display: block;
-        color: $header;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 50%;
+        margin-top: 1.5rem;
     }
+
+    #cookies_powiadomienie {
+        @include respond(big-desktop) {
+            font-size: 1.5rem;
+        }
+
+        font-size: 1.8rem;
+        max-width: 250px;
+        display: block;
+        color: #58232b;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 50%;
+        margin: 0 auto;
+
+        @include respond(tab-land) {
+            font-size: 2.4rem;
+        }
+
+        @include respond(phone) {
+            padding-top: 20%;
+            text-align: left;
+            max-width: 400px;
+        }
+
+        @include respond(medium-phone) {
+            padding-left: 30%;
+            font-size: 1.6rem;
+        }
+
+        @include respond(small-phone) {
+            padding-top: 15%;
+            padding-left: 33%;
+            text-align: left;
+            max-width: fit-content;
+        }
+    }
+
     #cookies_polityka {
+        @include respond(big-desktop) {
+            font-size: 1.4rem;
+        }
+
         text-transform: uppercase;
         text-decoration: underline;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
+
+        @include respond(tab-land) {
+            font-size: 2.2rem;
+        }
+
+        @include respond(phone) {
+            position: absolute;
+            bottom: -40%;
+            left: 0;
+            font-size: 2.8rem;
+        }
+
+        @include respond(small-phone) {
+            bottom: -60%;
+            left: 0;
+            font-size: 1.8rem;
+        }
     }
+
     #okbutton {
-        padding: 0.2rem 2rem;
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+        }
+
+        padding: 1.3rem 3.8rem;
         background-color: #d4a243;
-        font-weight: 600;
+        font-weight: 400;
         border-radius: 24px;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
+
+        @include respond(tab-land) {
+            font-size: 2.3rem;
+        }
+
+        @include respond(phone) {
+            padding: 1.7rem 6.8rem;
+            border-radius: 27px;
+            font-size: 1.9rem;
+            position: absolute;
+            bottom: -40%;
+            right: 0;
+        }
+
+        @include respond(small-phone) {
+            padding: 0.7rem 2.8rem;
+            bottom: -60%;
+        }
     }
+
     #cookies_close {
         position: absolute;
-        bottom: 120%;
-        right: 0;
+        top: 15%;
+        right: -1%;
         cursor: pointer;
+
+        @include respond(phone) {
+            top: 30%;
+            right: 10%;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        @include respond(medium-phone) {
+            img {
+                width: 70%;
+            }
+        }
+
+        @include respond(small-phone) {
+            top: 34%;
+            right: -5%;
+
+            img {
+                width: 60%;
+            }
+        }
     }
 }

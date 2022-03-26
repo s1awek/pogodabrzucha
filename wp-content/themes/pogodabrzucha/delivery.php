@@ -23,24 +23,24 @@
 
             <form class="delivery__form-form" id="post-codes" method="post">
                 <div class="delivery__form-inputs">
-                    <div>
+                    <div class="delivery__inner">
                         <label for="postal">Kod pocztowy</label>
-                        <input type="text" name="postal" id="postal" placeholder="00-000" value="" required />
-                        <div class="inputError" id="errCode"> Wprowadź prawidłowy kod</div>
+                        <input type="text" name="postal" id="postal" pattern="^\d{2}-\d{3}$" placeholder="00-000" value="" required />
+                        <div class="inputError" id="errCode">Niepoprawny kod</div>
                     </div>
-                    <div>
-                        <label for="city">Nazwa miejscowości</label>
+                    <div class="delivery__inner">
+                        <label for=" city">Nazwa miejscowości</label>
                         <input type="text" name="city" id="city" placeholder="np. Łódź" required />
-                        <div class="inputError" id="errCity">Wprowadź prawidłowe miasto</div>
+                        <div class="inputError" id="errCity">Niepoprawne miasto</div>
                     </div>
 
 
                     <div class="submit-button submit-button-v2">
                         <img class="decoration decorationP1" src="/wp-content/uploads/2022/03/chmurka-medium-gdzie.png">
                         <div class="submit-button__row">
-                            <a type="submit" class="delivery__form-button button button--primary" onclick="getVal()">
+                            <button type="button" class="delivery__form-button button button--primary" onclick="getVal()">
                                 sprawdź
-                            </a>
+                            </button>
                             <img class="decoration decorationP2" src="/wp-content/uploads/2022/03/chmurka-button-gorna.png">
                             <img class="decoration decorationP3" src="/wp-content/uploads/2022/03/chmurka-button-dolna-1.png">
                         </div>

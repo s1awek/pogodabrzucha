@@ -5,7 +5,7 @@
 }
 
 .menu-link {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     @include respond(small-desktop) {
         font-size: 1.7rem;
     }
@@ -37,7 +37,7 @@
         box-shadow: 1px #562229;
         margin-left: 1rem;
         display: flex;
-        transition: all 2s;
+        transition: all .5s;
         a {
             font-size: 2.2rem;
             padding: 0.2rem 3.2rem;
@@ -50,7 +50,7 @@
         &:hover {
             transform: scale(1.1);
             background: radial-gradient(#6f2d37, #451a20);
-            background-color: transparent;
+            background-color: #583337;
         }
         a {
             color: $white;
@@ -66,8 +66,8 @@
             display: none;
         }
         a {
-            font-size: 2.2rem;
-            padding: 0.2rem 3.2rem;
+            font-size: 2rem;
+            padding: 0.3rem 3.2rem;
             transition: all 1s;
             font-weight: 500;
         }
@@ -92,6 +92,7 @@
             img {
                 max-width: 30rem;
                 width: 100%;
+                margin-left: 6rem;
             }
         }
     }

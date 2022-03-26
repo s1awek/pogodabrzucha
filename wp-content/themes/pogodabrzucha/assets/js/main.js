@@ -1,4 +1,5 @@
 /** @format */
+
 //scroll header
 jQuery(document).ready(function ($) {
   $(window).scroll(function () {
@@ -54,12 +55,20 @@ function closeTarget() {
 function showErr(errType) {
   if (errType == 'code') {
     var errField = document.getElementById('errCode');
+    var parent = errField.closest('.delivery__inner');
     errField.style.display = 'block';
+    if (parent) {
+      parent.classList.add('error');
+    }
   } else if (errType == 'city') {
     var errField2 = document.getElementById('errCity');
+    var parent = errField2.closest('.delivery__inner');
     errField2.style.display = 'block';
+    if (parent) {
+      parent.classList.add('error');
+    }
   }
-  document.getElementById('post-codes').reset();
+  //document.getElementById('post-codes').reset();
 }
 
 //slider reviews
@@ -112,9 +121,19 @@ function showSlidesM(n) {
 
   slides[slideIndexM - 1].style.display = 'flex';
 }
+document.querySelectorAll('.delivery__inner input').forEach((item) => {
+  console.log(item);
+  item.addEventListener('input', (e) => {
+    item.closest('.delivery__inner').classList.remove('error');
+  });
+});
+
 function getVal() {
   var errField = document.getElementById('errCode');
   var errField2 = document.getElementById('errCity');
+  document.querySelectorAll('.delivery__inner').forEach((item) => {
+    item.classList.remove('error');
+  });
   if (errField.style.display === 'block') {
     errField.style.display = 'none';
   } else if (errField2.style.display == 'block') {
@@ -2438,7 +2457,7 @@ function getVal() {
 
   if (isOkCode && isOkCity && cityLenght > 2 && codeLenght === 6) {
     showTarget('success');
-  } else if (codeLenght < 6) {
+  } else if (!strinfCode.match(/^[0-9]{2}-[0-9]{3}$/g)) {
     showErr('code');
   } else if (cityLenght < 2) {
     showErr('city');
@@ -2446,10 +2465,9 @@ function getVal() {
     showTarget('Err');
   }
 }
-/** @format */
 
 var slideIndex = 1;
-showSlides(slideIndex);
+//showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -2471,12 +2489,15 @@ function showSlides(n) {
   if (n < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-    console.log(slides[i].querySelector('.slide-img').classList);
-  }
 
-  slides[slideIndex - 1].style.display = 'block';
+  for (i = 0; i < slides.length; i++) {
+    slides[i].querySelector('.slider-info').style.display = 'none';
+    slides[i].querySelector('.slide-img').classList.add('slide-right');
+    slides[i].querySelector('.slide-img').classList.remove('slide-left');
+  }
+  slides[slideIndex - 1].querySelector('.slider-info').style.display = 'block';
+  slides[slideIndex - 1].querySelector('.slide-img').classList.add('slide-left');
+  slides[slideIndex - 1].querySelector('.slide-img').classList.remove('slide-right');
 }
 
 let intViewportWidth = window.innerWidth;

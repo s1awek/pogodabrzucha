@@ -11,6 +11,11 @@ footer {
             margin: 0;
         }
     }
+    .menu-item {
+        &:hover {
+            background-image: none;
+        }
+    }
     .widget-title,
     .newsletter__title {
         font-family: freight-big-pro, serif;
@@ -49,7 +54,7 @@ footer {
     a {
         color: $white;
         font-size: 1.6rem;
-        font-weight: 400;
+        font-weight: 300;
         @include respond(phone) {
             font-size: 2rem;
         }
