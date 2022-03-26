@@ -8,23 +8,24 @@
  * @since 1.0.0
  */
 
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
 }
 
 /**
  * Define Constants
  */
-define('ASTRA_THEME_VERSION', '3.7.7');
-define('ASTRA_THEME_SETTINGS', 'astra-settings');
-define('ASTRA_THEME_DIR', trailingslashit(get_template_directory()));
-define('ASTRA_THEME_URI', trailingslashit(esc_url(get_template_directory_uri())));
+define( 'ASTRA_THEME_VERSION', '3.7.9' );
+define( 'ASTRA_THEME_SETTINGS', 'astra-settings' );
+define( 'ASTRA_THEME_DIR', trailingslashit( get_template_directory() ) );
+define( 'ASTRA_THEME_URI', trailingslashit( esc_url( get_template_directory_uri() ) ) );
+
 
 /**
  * Minimum Version requirement of the Astra Pro addon.
  * This constant will be used to display the notice asking user to update the Astra addon to the version defined below.
  */
-define('ASTRA_EXT_MIN_VER', '3.6.3');
+define( 'ASTRA_EXT_MIN_VER', '3.6.3' );
 
 /**
  * Setup helper functions of Astra.
@@ -42,12 +43,13 @@ require_once ASTRA_THEME_DIR . 'inc/theme-update/astra-update-functions.php';
 require_once ASTRA_THEME_DIR . 'inc/theme-update/class-astra-theme-background-updater.php';
 require_once ASTRA_THEME_DIR . 'inc/theme-update/class-astra-pb-compatibility.php';
 
+
 /**
  * Fonts Files
  */
 require_once ASTRA_THEME_DIR . 'inc/customizer/class-astra-font-families.php';
-if (is_admin()) {
-    require_once ASTRA_THEME_DIR . 'inc/customizer/class-astra-fonts-data.php';
+if ( is_admin() ) {
+	require_once ASTRA_THEME_DIR . 'inc/customizer/class-astra-fonts-data.php';
 }
 
 require_once ASTRA_THEME_DIR . 'inc/lib/webfont/class-astra-webfont-loader.php';
@@ -102,13 +104,13 @@ require_once ASTRA_THEME_DIR . 'inc/core/class-astra-admin-helper.php';
 
 require_once ASTRA_THEME_DIR . 'inc/schema/class-astra-schema.php';
 
-if (is_admin()) {
+if ( is_admin() ) {
 
-    /**
-     * Admin Menu Settings
-     */
-    require_once ASTRA_THEME_DIR . 'inc/core/class-astra-admin-settings.php';
-    require_once ASTRA_THEME_DIR . 'inc/lib/astra-notices/class-astra-notices.php';
+	/**
+	 * Admin Menu Settings
+	 */
+	require_once ASTRA_THEME_DIR . 'inc/core/class-astra-admin-settings.php';
+	require_once ASTRA_THEME_DIR . 'inc/lib/astra-notices/class-astra-notices.php';
 
 }
 
@@ -155,15 +157,15 @@ require_once ASTRA_THEME_DIR . 'inc/addons/heading-colors/class-astra-heading-co
 require_once ASTRA_THEME_DIR . 'inc/builder/class-astra-builder-loader.php';
 
 // Elementor Compatibility requires PHP 5.4 for namespaces.
-if (version_compare(PHP_VERSION, '5.4', '>=')) {
-    require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-elementor.php';
-    require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-elementor-pro.php';
-    require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-web-stories.php';
+if ( version_compare( PHP_VERSION, '5.4', '>=' ) ) {
+	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-elementor.php';
+	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-elementor-pro.php';
+	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-web-stories.php';
 }
 
 // Beaver Themer compatibility requires PHP 5.3 for anonymus functions.
-if (version_compare(PHP_VERSION, '5.3', '>=')) {
-    require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-beaver-themer.php';
+if ( version_compare( PHP_VERSION, '5.3', '>=' ) ) {
+	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-beaver-themer.php';
 }
 
 require_once ASTRA_THEME_DIR . 'inc/core/markup/class-astra-markup.php';
@@ -174,49 +176,3 @@ require_once ASTRA_THEME_DIR . 'inc/core/markup/class-astra-markup.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
-
-/* custom post */
-
-add_theme_support('post-thumbnails');
-add_post_type_support('diety', 'thumbnail');
-function create_post_type()
-{
-    register_post_type('diety',
-        array(
-            'labels' => array(
-                'name' => _('Diety'),
-                'singular_name' => _('Dieta'),
-            ),
-            'public' => true,
-            'has_archive' => false,
-            'menu_icon' => 'dashicons-carrot',
-        )
-    );
-}
-add_action('init', 'create_post_type');
-
-/* add menu icon */
-add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
-
-function my_wp_nav_menu_objects($items, $args)
-{
-
-    // loop
-    foreach ($items as &$item) {
-
-        // vars
-        $icon = get_field('icon_menu', $item);
-
-        // append icon
-        if ($icon) {
-
-            $item->title .= ' <img src="' . $icon['url'] . '">';
-
-        }
-
-    }
-
-    // return
-    return $items;
-
-}
