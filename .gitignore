@@ -1,0 +1,100 @@
+cgi-bin/*
+info.txt
+*.log
+disable-ssl.php
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups-dup-lite/
+wp-content/ai1wm-backups/
+/wp-snapshots
+#wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+sklep/
+/stats
+.idea
+deploy.php
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+package-lock.json
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.map
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# Composer #
+##########
+/vendors/composer/
+wp-content/themes/iconic-one-child/vendor
+#!assets/js/vendor/
+wpcs/
+composer.lock
+
+# Bower #
+##########
+assets/bower_components/*
+
+# Codekit #
+##########
+/codekit-config.json
+*.codekit
+**.codekit-cache/*
+
+# NPM #
+##########
+node_modules
+
+# Compiled Files and Build Dirs #
+##########
+/README.html
+/build/
+
+# PhpStrom Project Files #
+library/vendors/composer
+assets/img/.DS_Store
+assets/sass/HTML
+Rails
+
+wp-content/ewww/*.exe
+wp-content/uploads/cache/

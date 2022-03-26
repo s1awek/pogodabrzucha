@@ -1,0 +1,374 @@
+.section-features {
+    position: relative;
+    &__before-header {
+        margin-top: 10.7rem;
+    }
+    &__header {
+        text-align: center;
+        @include respond(phone) {
+            text-align: left;
+            h2 {
+                margin-left: 3rem;
+            }
+        }
+    }
+    &__profits {
+        display: flex;
+        column-gap: 9rem;
+        margin: 2rem 6rem;
+        @include respond(phone) {
+            flex-flow: column;
+        }
+    }
+    &__profit {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        row-gap: 2.2rem;
+        margin-bottom: 10.7rem;
+        @include respond(phone) {
+            flex-flow: row;
+            column-gap: 2.2rem;
+            justify-content: space-around;
+        }
+        p {
+            font-size: 1.6rem;
+            @include respond(phone) {
+                text-align: left;
+                font-size: 2rem;
+                width: 70%;
+            }
+        }
+        &--1 {
+            img {
+                width: 80%;
+                @include respond(phone) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__img-box {
+        height: 20rem;
+        width: 20rem;
+        margin-bottom: 4rem;
+        @include respond(phone) {
+            display: none;
+        }
+        img {
+            max-height: 26rem;
+        }
+        &--mobile {
+            display: none;
+            @include respond(phone) {
+                display: flex;
+                min-width: 7rem;
+                width: 22%;
+            }
+        }
+    }
+    span {
+        display: block;
+        margin-top: 5.6rem;
+    }
+    .decoration1 {
+        z-index: -1;
+        width: 70rem;
+        left: 24rem;
+        top: -16rem;
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    .decoration2 {
+        z-index: -1;
+        top: 10rem;
+        width: 30rem;
+        right: 30rem;
+        @include respond(phone) {
+            top: -7rem;
+            right: 30rem;
+        }
+        @include respond(medium-phone) {
+            top: -7rem;
+            right: 10rem;
+        }
+    }
+}
+
+.section-process {
+    &__steps {
+        display: flex;
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}
+
+.section-started {
+    position: relative;
+    border-radius: 40px;
+    background-image: linear-gradient(#ffebe6, #f8e8c4);
+    min-height: 82.8rem;
+    height: 100%;
+    @include respond(phone) {
+        background-image: none;
+        background-image: url(/wp-content/uploads/2022/03/mobile-bcg.png) !important;
+        min-height: auto;
+        border-radius: 0;
+    }
+    &__header {
+        padding-top: 5rem;
+        text-align: center;
+        @include respond(phone) {
+            text-align: left;
+            h2 {
+                margin-left: 3rem;
+            }
+        }
+    }
+    &__txt {
+        max-width: 82rem;
+        margin: 0 auto;
+        padding-top: 17rem;
+        z-index: 1;
+        @include respond(phone) {
+            padding: 4rem 2rem 4rem;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+    .decoration3 {
+        bottom: 6rem;
+        left: 10rem;
+        z-index: 0;
+        max-width: 21.7rem;
+        width: 100%;
+        @include respond(phone) {
+            position: inherit !important;
+            bottom: auto;
+            left: auto;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+    }
+    .decoration4 {
+        right: 10rem;
+        bottom: 9rem;
+        z-index: 0;
+        max-width: 20rem;
+        width: 100%;
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    .decoration5 {
+        top: 4rem;
+        left: 20rem;
+        z-index: 0;
+        max-width: 22.7rem;
+        width: 100%;
+        @include respond(big-desktop) {
+            left: 20rem;
+        }
+        @include respond(small-desktop) {
+            left: 7rem;
+            top: 9rem;
+        }
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}
+
+.section-delivery {
+    justify-content: space-evenly;
+    position: relative;
+    min-height: 60rem;
+    align-items: center;
+    @include respond(phone) {
+        flex-flow: column;
+        text-align: center;
+    }
+    &__box {
+        width: 35%;
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+    &__subheader {
+        p {
+            font-size: 1.8rem;
+            max-width: 38rem;
+            @include respond(phone) {
+                margin: 0 auto;
+            }
+        }
+    }
+    .submit-button-v2 {
+        a {
+            font-size: 2.4rem;
+            font-weight: 600;
+            background-color: $gold;
+            border-radius: 35px;
+            color: $header;
+            padding: 1.8rem 4.6rem;
+            z-index: 99;
+            &:hover {
+                background-color: #F2B746;
+            }
+        }
+    }
+    .delivery__form-inputs {
+        display: flex;
+        column-gap: 4rem;
+        @include respond(phone) {
+            flex-flow: column;
+            row-gap: 2rem;
+        }
+        input {
+            border: 1px solid $header;
+            border-radius: 45px;
+            min-width: 28rem;
+            min-height: 5rem;
+            @include respond(phone) {
+                min-height: 4.5rem;
+            }
+        }
+         ::placeholder {
+            color: #d1d1d1;
+            margin-left: 1rem;
+            font-size: 2.4rem;
+            padding-top: 1rem;
+            @include respond(phone) {
+                margin: 0 auto;
+            }
+        }
+        label {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: $header;
+        }
+        div {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+}
+
+.submit-button-v2 {
+    @include respond(phone) {
+        display: none !important;
+    }
+}
+
+.section-reviews {
+    background-color: #ffebe6;
+    display: flex;
+    border-radius: 40px;
+    margin-top: 10rem;
+    padding: 6rem 5rem 4.8rem 4rem;
+    column-gap: 5rem;
+    &__avarage {
+        width: 40%;
+        text-align: center;
+        h3 {
+            color: $header;
+            font-family: freight-big-pro, serif;
+            font-size: 2.9rem;
+            text-align: center;
+        }
+        p {
+            font-size: 2.2rem;
+            color: $header;
+            margin-bottom: 0 !important;
+        }
+    }
+    &__controler {
+        align-self: center;
+        cursor: pointer;
+        img {
+            min-width: 4rem;
+        }
+    }
+    &__row {
+        column-gap: 2rem;
+        &--mobile {
+            display: none;
+            @include respond(phone) {
+                display: flex;
+            }
+        }
+        &--web {
+            display: flex;
+            @include respond(phone) {
+                display: none;
+            }
+        }
+        &-item {
+            &--stars {
+                display: flex;
+                align-items: flex-start;
+                column-gap: 2rem;
+                p {
+                    font-size: 1.8rem;
+                    color: $header;
+                }
+                img {
+                    @include respond(tab-port) {
+                        max-width: 14rem;
+                    }
+                }
+            }
+            &--txt {
+                font-size: 1.6rem;
+                color: $header;
+                @include respond(small-desktop) {
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin-bottom: 0 !important;
+                }
+                .bold-txt {
+                    font-weight: 600;
+                    padding-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.decorationP2 {
+    top: 21rem;
+    right: 16rem;
+    transition: all 1s;
+}
+
+.decorationP3 {
+    top: 31rem;
+    right: 10rem;
+    transition: all 1s;
+}
+
+.decorationP1 {
+    top: 9rem;
+    right: 0;
+    z-index: -1;
+    max-width: 56rem;
+}
+
+.submit-button-v2 {
+    .submit-button__row:hover {
+        .decorationP2 {
+            top: 16rem;
+            right: 24rem;
+        }
+        .decorationP3 {
+            top: 34rem;
+            right: 5rem;
+        }
+    }
+}

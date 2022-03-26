@@ -1,0 +1,136 @@
+.diet-description,
+.section-features,
+.section-started,
+.section-delivery,
+.section-contact,
+.price__banner,
+.price__cta-header,
+.signle-diet__title,
+.price__order-test-txt,
+.menu__header,
+.menu-diet__header {
+    h2 {
+        font-size: 8.8rem;
+        color: $header;
+        font-family: freight-big-pro, serif;
+        font-weight: 900;
+        margin-bottom: 2.8rem;
+        line-height: 1;
+        @include respond(small-desktop) {
+            font-size: 5.8rem;
+        }
+        @include respond(phone) {
+            font-size: 6rem;
+        }
+    }
+    p {
+        color: $header;
+        font-weight: 500;
+    }
+}
+
+.section-process__header {
+    h2 {
+        font-size: 8.8rem;
+        font-family: freight-big-pro, serif;
+        font-weight: 900;
+        margin-bottom: 2.8rem;
+        color: #586e87;
+        line-height: 1;
+        @include respond(small-desktop) {
+            font-size: 5.8rem;
+        }
+        @include respond(phone) {
+            font-size: 6rem;
+            color: $header;
+        }
+    }
+}
+
+.diet-banner-header {
+    @include respond(big-desktop) {
+        font-size: 6.6rem;
+    }
+    font-size: 7rem;
+    font-family: freight-big-pro,
+    serif;
+    font-weight: 900;
+    color: #ffebe6;
+    line-height: 1;
+    @include respond(small-desktop) {
+        font-size: 5.8rem;
+    }
+}
+
+.diet-description {
+    p {
+        font-size: 1.6rem;
+        max-width: 59.2rem;
+        padding-left: 1rem;
+        @include respond(phone) {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.section-features {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.text-content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    @include respond(phone) {
+        width: 90%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $header;
+        font-family: freight-big-pro, serif;
+    }
+    h1 {
+        font-size: 5.2rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    h4 {
+        font-size: 3.5rem;
+    }
+    h5 {
+        font-size: 3.2rem;
+    }
+    h6 {
+        font-size: 3rem;
+    }
+    p,
+    ul li,
+    ol li {
+        color: $header;
+    }
+    p {
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+    ul,
+    ol {
+        li {
+            font-size: 1.8rem;
+        }
+    }
+    a {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+}

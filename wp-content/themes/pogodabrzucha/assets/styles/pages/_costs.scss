@@ -1,0 +1,313 @@
+            .price {
+                &__banner {
+                    display: flex;
+                    align-items: center;
+                    @include respond(phone) {
+                        flex-flow: column;
+                    }
+                    &-txt {
+                        text-align: center;
+                        @include respond(hd-desktop) {
+                            margin-left: 15rem;
+                        }
+                        @include respond(big-desktop) {
+                            margin-left: 9rem;
+                        }
+                        margin-left: 0;
+                        .web-view {
+                            text-align: initial;
+                        }
+                        &-link {
+                            font-size: 2.4rem;
+                            font-weight: 600;
+                            background-color: $gold;
+                            border-radius: 35px;
+                            display: block;
+                            box-shadow: 1% 1% 1% #562229;
+                            padding: 1.8rem 4.6rem;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                        img {
+                            max-width: 37.7rem;
+                            width: 100%;
+                        }
+                    }
+                    .mobile-view {
+                        img {
+                            width: 100%;
+                        }
+                        h2,
+                        p {
+                            padding: 2rem;
+                        }
+                        p {
+                            margin-left: 2rem;
+                        }
+                    }
+                    .subtext {
+                        font-size: 1.8rem;
+                        color: $header;
+                    }
+                }
+                &__cta {
+                    text-align: center;
+                    @include respond(phone) {
+                        margin: 15rem 0;
+                    }
+                    &-header {
+                        margin-top: 9rem;
+                    }
+                    &-content {
+                        position: relative;
+                        p {
+                            font-size: 2.4rem;
+                            text-align: center;
+                            color: $header;
+                        }
+                        .decorationPr1,
+                        .decorationPr2 {
+                            z-index: -1;
+                        }
+                        .decorationPr1 {
+                            @include respond(big-desktop) {
+                                top: -22rem;
+                                left: 29rem;
+                            }
+                            top: -21rem;
+                            left: 17rem;
+                            max-width: 48rem;
+                            @include respond(phone) {
+                                display: none;
+                            }
+                        }
+                        .decorationPr2 {
+                            @include respond(big-desktop) {
+                                top: 0;
+                                right: 42rem;
+                            }
+                            max-width: 28rem;
+                            top: 0;
+                            right: 23rem;
+                        }
+                    }
+                }
+                &__order-test {
+                    display: flex;
+                    align-items: center;
+                    @include respond(phone) {
+                        flex-flow: column;
+                        img {
+                            margin: 5rem 0;
+                        }
+                        .mobile-view {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &-link {
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        background-color: $gold;
+                        border-radius: 35px;
+                        padding: 1.8rem 4.6rem;
+                        @include respond(phone) {
+                            position: inherit;
+                            background-image: radial-gradient(#6F2D37, #451A20);
+                            color: $white;
+                            margin: 3rem 0;
+                            display: block;
+                            text-align: center;
+                            font-weight: 900;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                    &-txt {
+                        @include respond(hd-desktop) {
+                            margin-left: 15rem;
+                        }
+                        margin-left: 5rem;
+                        @include respond(phone) {
+                            margin-left: 1rem;
+                            h2,
+                            p {
+                                margin-left: 5rem;
+                            }
+                            a {
+                                width: 100%;
+                            }
+                        }
+                        p {
+                            font-size: 1.6rem;
+                            max-width: 59rem;
+                            text-align: left;
+                            color: $header;
+                            @include respond(phone) {
+                                max-width: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .diets {
+                display: flex;
+                justify-content: space-around;
+                align-items: end;
+                margin-top: 3rem;
+                margin-bottom: 6rem;
+                .diet-box {
+                    img {
+                        max-width: 32.6rem;
+                        @include respond(small-desktop) {
+                            max-width: 27rem;
+                        }
+                    }
+                    h4 {
+                        color: $header;
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+                .active {
+                    h4 {
+                        font-weight: 600;
+                    }
+                }
+            }
+            
+            .single-diet {
+                &__title {
+                    margin-top: 3rem;
+                    margin-bottom: 5rem;
+                }
+            }
+            
+            .submit-button-v1 {
+                min-height: 45rem;
+                max-width: 90rem;
+                margin: 0 auto;
+                position: relative;
+                @include respond(tab-port) {
+                    min-height: 65rem;
+                }
+                @include respond(phone) {
+                    min-height: auto;
+                }
+                .decorationC1 {
+                    left: 19rem;
+                    z-index: -1;
+                    max-width: 76rem;
+                    display: inherit;
+                    @include respond(tab-port) {
+                        max-width: 50rem;
+                    }
+                    @include respond(phone) {
+                        display: none;
+                    }
+                }
+                .decorationC2 {
+                    z-index: 1;
+                    display: inherit;
+                    transition: all 1s;
+                    @include respond(big-desktop) {
+                        top: 12rem;
+                        right: 26rem;
+                    }
+                    top: 27%;
+                    right: 23%;
+                    @include respond(small-desktop) {
+                        top: 12rem;
+                        right: 23rem;
+                    }
+                    @include respond(tab-port) {
+                        max-width: 12rem;
+                    }
+                    @include respond(phone) {
+                        display: none;
+                    }
+                }
+                .decorationC3 {
+                    transition: all 1s;
+                    @include respond(big-desktop) {
+                        top: 23rem;
+                        right: 20rem;
+                    }
+                    top: 60%;
+                    right: 15%;
+                    @include respond(small-desktop) {
+                        top: 25rem;
+                        right: 15rem;
+                    }
+                    @include respond(tab-port) {
+                        max-width: 10rem;
+                    }
+                    @include respond(phone) {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    .decorationC2 {
+                        @include respond(big-desktop) {
+                            top: 8rem;
+                            right: 59rem;
+                        }
+                        top: 17%;
+                        right: 65%;
+                        @include respond(tab-land) {
+                            top: 16%;
+                            right: 70%;
+                        }
+                    }
+                    .decorationC3 {
+                        @include respond(big-desktop) {
+                            top: 27rem;
+                            right: 26rem;
+                        }
+                        top: 75%;
+                        right: 20%;
+                        @include respond(tab-land) {
+                            top: 45%;
+                            right: 20%;
+                        }
+                    }
+                }
+                a {
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    background-color: $gold;
+                    border-radius: 35px;
+                    padding: 1.2rem 9rem;
+                    position: absolute;
+                    z-index: 99;
+                    &:hover {
+                        background-color: #F2B746;
+                        @include respond(phone) {
+                            background-color: transparent;
+                            background-image: radial-gradient(#6F2D37, #451A20);
+                            color: $white;
+                        }
+                    }
+                    @include respond(big-desktop) {
+                        top: 17rem;
+                        left: 21rem;
+                    }
+                    top: 45%;
+                    left: 34%;
+                    @include respond(small-desktop) {
+                        top: 19rem;
+                        left: 26rem;
+                    }
+                    @include respond(phone) {
+                        position: inherit;
+                        background-image: radial-gradient(#6F2D37, #451A20);
+                        color: $white;
+                        display: block;
+                    }
+                }
+            }

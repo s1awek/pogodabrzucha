@@ -1,0 +1,130 @@
+<?php
+/**
+ * Template name: Slider
+ * @package WordPress
+ * @subpackage astra
+ */
+?>
+<section class="section-slider">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides ">
+            <div class="slider-info " id="slide1">
+
+                <div class="slider-price-div">
+                    <p> od <?php the_field('slider_price_1')?> zł</p>
+                </div>
+                <h2 class="diet-banner-header fade"><?php the_field('slider_name1')?></h2>
+                <p class="diet-banner-kcal fade">
+                    <?php the_field('slider_kcal_1-v1');?> / <?php the_field('slider_kcal_1-v2');?> /
+                    <?php the_field('slider_kcal_1-v3');?> kCal
+                </p>
+                <p class="diet-banner-desc fade"><?php the_field('slider_desc_1')?></p>
+                <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button "
+                        href="/diety/dieta-odchudzajaca">więcej info
+                    </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+            </div>
+            <div class="slide-img slide-left ">
+                <?php
+$slideImg1 = get_field('slider_image1');
+if (!empty($slideImg1)): ?>
+
+
+                <img src="<?php echo esc_url($slideImg1['url']); ?>">
+                <?php endif;?>
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="slider-info " id="slide2">
+
+                <div class="slider-price-div">
+                    <p> od <?php the_field('slider_price_2')?> zł</p>
+                </div>
+                <h2 class="diet-banner-header fade"><?php the_field('slider_name2')?></h2>
+                <p class="diet-banner-kcal">
+                    <?php the_field('slider_kcal_2-v1');?> / <?php the_field('slider_kcal_2-v2');?> /
+                    <?php the_field('slider_kcal_2-v3');?> kCal
+                </p>
+                <p class="diet-banner-desc fade"><?php the_field('slider_desc_1')?></p>
+                <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button "
+                        href="/diety/dieta-weganska/">więcej info
+                    </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+            </div>
+            <div class="slide-img slide-left">
+                <?php
+$slideImg2 = get_field('slider_image2');
+if (!empty($slideImg2)): ?>
+                <img class="slider-diet-img" src="<?php echo esc_url($slideImg2['url']); ?>"
+                    alt="<?php echo esc_attr($slideImg2['alt']); ?>" />
+                <?php endif;?>
+            </div>
+
+        </div>
+        <div class="mySlides ">
+            <div class="slider-info " id="slide3">
+
+                <div class="slider-price-div fade">
+                    <p> od <?php the_field('slider_price_3')?> zł</p>
+                </div>
+                <h2 class="diet-banner-header fade"><?php the_field('slider_name3')?></h2>
+                <p class="diet-banner-kcal">
+                    <?php the_field('slider_kcal_3-v1');?> / <?php the_field('slider_kcal_3-v2');?> /
+                    <?php the_field('slider_kcal_3-v3');?> kCal
+                </p>
+                <p class="diet-banner-desc fade"><?php the_field('slider_desc_3')?></p>
+                <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button "
+                        href="/diety/dieta-sportowa/">więcej info
+                    </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+            </div>
+            <div class="slide-img slide-left">
+                <?php
+$slideImg3 = get_field('slider_image3');
+if (!empty($slideImg3)): ?>
+                <img class="slider-diet-img" src="<?php echo esc_url($slideImg3['url']); ?>"
+                    alt="<?php echo esc_attr($slideImg3['alt']); ?>" />
+                <?php endif;?>
+            </div>
+
+        </div>
+        <div class="mySlides ">
+            <div class="slider-info " id="slide4">
+
+                <div class="slider-price-div fade">
+                    <p> od <?php the_field('slider_price_4')?> zł</p>
+                </div>
+                <h2 class="diet-banner-header fade"><?php the_field('slider_name4')?></h2>
+                <p class="diet-banner-kcal fade">
+                    <?php the_field('slider_kcal_4-v1');?> / <?php the_field('slider_kcal_4-v2');?> /
+                    <?php the_field('slider_kcal_4-v3');?> kCal
+                </p>
+                <p class="diet-banner-desc fade"><?php the_field('slider_desc_4')?></p>
+                <div class="diet-banner-buttons"><a class="border-button border-button--white fill-button "
+                        href="/diety/dieta-office/">więcej info
+                    </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+            </div>
+            <div class="slide-img slide-left">
+                <?php
+$slideImg4 = get_field('slider_image4');
+if (!empty($slideImg2)): ?>
+                <img class="slider-diet-img" src="<?php echo esc_url($slideImg4['url']); ?>"
+                    alt="<?php echo esc_attr($slideImg4['alt']); ?>" />
+                <?php endif;?>
+            </div>
+
+        </div>
+
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"><img src="/wp-content/uploads/2022/03/strzalka-lewo.png"></a>
+        <a class="next" onclick="plusSlides(1)"><img src="/wp-content/uploads/2022/03/strzalka-prawo.png"></a>
+    </div>
+
+
+
+
+</section>

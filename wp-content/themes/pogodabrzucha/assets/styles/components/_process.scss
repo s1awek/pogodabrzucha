@@ -1,0 +1,135 @@
+.section-process {
+    border-radius: 40px;
+    background-color: #D4E0E3;
+    @include respond(phone) {
+        background-image: none;
+    }
+    &__header {
+        text-align: left;
+        @include respond(big-desktop) {
+            padding: 6rem 0 0 20rem;
+        }
+        padding: 6rem 0 0 10rem;
+        @include respond(small-desktop) {
+            padding: 6rem 0 0 5rem;
+        }
+        @include respond(phone) {
+            padding: 2rem 0;
+            text-align: center;
+            h2 {
+                text-align: left;
+                margin-left: 3rem;
+            }
+        }
+    }
+    h3 {
+        color: $blue;
+        font-family: freight-big-pro, serif;
+        font-weight: 900;
+        font-size: 8.8rem;
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+    }
+    p {
+        color: $blue;
+    }
+    &__steps {
+        display: flex;
+        justify-content: center;
+        column-gap: 5rem;
+        @include respond(small-desktop) {
+            column-gap: 4rem;
+        }
+        @include respond(phone) {
+            display: none;
+        }
+        &-step {
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            &--1,
+            &--3,
+            &--5 {
+                padding-top: 12rem;
+                justify-content: flex-end;
+            }
+            &--2,
+            &--4 {
+                justify-content: flex-start;
+            }
+            p {
+                font-size: 2.2rem;
+                font-weight: 600;
+                color: $blue;
+                text-align: center;
+            }
+        }
+    }
+    &__subheader {
+        text-align: center;
+        padding-bottom: 10rem;
+        margin-top: 12rem;
+        p {
+            font-size: 2.4rem;
+        }
+    }
+    .step-img {
+        @include respond(big-desktop) {
+            max-width: 25rem;
+        }
+        max-width: 16rem;
+        @include respond(small-desktop) {
+            max-width: 18rem;
+        }
+    }
+    .p-decoration1,
+    .p-decoration2,
+    .p-decoration3,
+    .p-decoration4 {
+        max-width: 6.4rem;
+    }
+    .p-decoration1 {
+        top: 15rem;
+        right: -2rem;
+    }
+    .p-decoration2 {
+        bottom: 24rem;
+        right: -6rem;
+    }
+    .p-decoration3 {
+        top: 11rem;
+        right: -4rem;
+    }
+    .p-decoration4 {
+        top: 20rem;
+        right: -7rem;
+    }
+    &__steps--mobile {
+        display: none;
+        @include respond(phone) {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        &-step {
+            text-align: center;
+            p {
+                color: $blue;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding-top: 1.7rem;
+            }
+        }
+    }
+}
+
+.decorationStM1 {
+    z-index: -1;
+}
+
+.decorationStM2 {
+    z-index: -1;
+}

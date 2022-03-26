@@ -1,0 +1,103 @@
+@mixin links_style {
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+  }
+}
+@mixin links_style_color($color) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin centered {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*media query */
+//1em = 16px
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 23.4em) {
+      //375px
+      @content;
+    }
+  }
+  @if $breakpoint == phone-menu {
+    @media (max-width: 30em) {
+      //480px
+      @content;
+    }
+  }
+  @if $breakpoint == land-mod-small {
+    @media (orientation: landscape) and (max-height: 30em) {
+      @content;
+    }
+  }
+  @if $breakpoint == land-mod {
+    @media (orientation: landscape) and (max-height: 47.93em) {
+      @content;
+    }
+  }
+  @if $breakpoint == port-mod-small {
+    @media (orientation: portrait) and (max-height: 30em) {
+      @content;
+    }
+  }
+  @if $breakpoint == port-mod {
+    @media (orientation: portrait) and (max-height: 47.93em) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium-phone {
+    @media (max-width: 36.34em) {
+      //550px
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 47.93em) {
+      //776px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 64em) {
+      //1024px
+      @content;
+    }
+  }
+  @if $breakpoint == small-desktop {
+    @media (max-width: 76.62em) {
+      //1226px
+      @content;
+    }
+  }
+  //62.5% - 1rem
+  @if $breakpoint == big-desktop {
+    @media (min-width: 100.1em) {
+      //1601px
+      @content;
+    }
+  }
+  @if $breakpoint == hd-desktop {
+    @media (min-width: 118.81em) {
+      //1901px
+      @content;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Pogoda Brzucha
+Theme URI: https://explayn.it/
+Description: Dedicated Theme for Pogoda Brzucha
+Author: Explayn
+Author URI: https://explayn.it/
+Template: astra
+Version: 1.0.0
+Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
+Text Domain: Pogoda Brzucha
+*/
+
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/base";
+@import "base/typography";
+@import "components/form";
+@import "components/banner";
+@import "components/buttons";
+@import "components/localisation";
+@import "components/reviews";
+@import "components/filters";
+@import "components/process";
+@import "components/slider";
+@import 'components/cookies';
+@import 'components/popup';
+@import "layout/footer";
+@import "layout/header";
+@import "pages/costs";
+@import "pages/diets";
+@import "pages/front";

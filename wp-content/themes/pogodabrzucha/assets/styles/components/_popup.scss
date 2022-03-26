@@ -1,0 +1,48 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    //  opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__content {
+        @include centered;
+        width: 75%;
+    }
+    .close-elem {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        @include respond(phone) {
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.button-column {
+    text-align: center;
+}
+
+#DivSuccess {
+    display: none;
+}
+
+#DivErr {
+    display: none;
+}
+
+#errCode {
+    display: none;
+}
+
+#errCity {
+    display: none;
+}

@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 51.5% !important; //1rem - 10px
+    @include respond(hd-desktop) {
+        font-size: 68.75% !important; //1rem -
+    }
+    @include respond(big-desktop) {
+        font-size: 65.62% !important; //1rem -
+    }
+    @include respond(small-desktop) {
+        font-size: 54.25% !important;
+    }
+    @include respond(tab-land) {
+        font-size: 50% !important;
+    }
+    @include respond(tab-port) {
+        font-size: 37.5% !important;
+    }
+    @include respond(phone) {
+        font-size: 44% !important;
+    }
+    @include respond(small-phone) {
+        font-size: 37.2% !important; //1rem = 5px , 5/16 =
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.ast-container {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0 4rem;
+    @include respond(small-desktop) {
+        max-width: 100% !important;
+    }
+    @include respond(phone) {
+        overflow: hidden;
+    }
+    section {
+        margin: 1rem 4rem;
+        @include respond(phone) {
+            margin: 1rem 0.5rem;
+        }
+    }
+}
+
+section {
+    margin: 1rem 4rem;
+    @include respond(small-desktop) {
+        margin: 1rem 2rem;
+    }
+}
+
+.half-flex {
+    width: 50%;
+    @include respond(phone) {
+        width: 100%;
+    }
+}
+
+.decoration {
+    position: absolute;
+}
+
+.two-columns {
+    column-count: 2;
+    @include respond(phone) {
+        column-count: 1;
+    }
+}
+
+.mobile-view {
+    display: none !important;
+    @include respond(phone) {
+        display: block !important;
+        position: relative;
+    }
+}
+
+.web-view {
+    display: block !important;
+    @include respond(phone) {
+        display: none !important;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky !important;
+    /* Safari */
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+}

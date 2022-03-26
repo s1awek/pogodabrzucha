@@ -1,0 +1,263 @@
+footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    .site-above-footer-wrap {
+        border-radius: 40px;
+        background-color: $main-brown !important;
+        color: #FFEBE6;
+        width: auto;
+        margin: 1rem 4rem 4rem 4rem;
+        @include respond(phone) {
+            margin: 0;
+        }
+    }
+    .widget-title,
+    .newsletter__title {
+        font-family: freight-big-pro, serif;
+        font-size: 3.2rem;
+        color: #FFEBE6;
+        font-weight: 900;
+        @include respond(small-desktop) {
+            font-size: 2.8rem;
+        }
+        @include respond(tab-land) {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+        @include respond(phone) {
+            font-size: 4.5rem;
+        }
+    }
+    .newsletter__text {
+        @include respond(tab-land) {
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    .form__row {
+        @include respond(tab-land) {
+            input {
+                width: 100%;
+                font-size: 2rem;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    p,
+    a {
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:visited {
+            color: #FFEBE6;
+        }
+    }
+    a {
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.widget-title {
+    position: relative;
+}
+
+.widget-title:after {
+    content: url("/wp-content/uploads/2022/03/footer-title.png");
+    display: block;
+    height: 0.5rem;
+    top: 2rem;
+    position: absolute;
+}
+
+#newsletter_email {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #FFEBE6;
+    font-size: 1.8rem;
+    padding-left: 0;
+    padding-bottom: 0.2rem;
+    padding-top: 0;
+    @include respond(tab-land) {
+        font-size: 2.1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+::placeholder {
+    color: #FFEBE6;
+}
+
+.site-footer-above-section-5 {
+    align-self: flex-end;
+    img {
+        max-width: 19.3rem;
+        width: 100%;
+        @include respond(phone) {
+            max-width: 23rem;
+        }
+    }
+    .copy-date {
+        margin-top: 3.8rem;
+        font-size: 1.6rem;
+        @include respond(phone) {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+.site-above-footer-wrap[data-section="section-above-footer-builder"] .ast-builder-grid-row {
+    @include respond(big-desktop) {
+        max-width: 90% !important;
+        margin: 0 auto;
+    }
+    max-width: 95%;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+    @include respond(phone) {
+        padding: 4rem 0 6rem 0;
+    }
+    &-img {
+        width: 50%;
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+}
+
+#menu-footer-menu-diety,
+#menu-footer-menu-informacje {
+    .menu-link {
+        font-size: 1.6rem;
+    }
+}
+
+.newsletter_submit {
+    padding-top: 2rem;
+    @include respond(tab-land) {
+        margin-bottom: 5rem;
+    }
+    a {
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.footer-widget-area[data-section^="section-fb-html-"] .ast-builder-html-element {
+    text-align: left !important;
+}
+
+.ast-builder-grid-row-container-inner {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    @include respond(phone) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.ast-builder-footer-grid-columns {
+    @include respond(big-desktop) {
+        grid-column-gap: 8rem !important;
+    }
+    grid-column-gap: 5rem !important;
+}
+
+#block-4,
+#block-3 {
+    display: none;
+    @include respond(tab-land) {
+        display: block;
+    }
+}
+
+#nav_menu-3,
+#nav_menu-2 {
+    display: block;
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+
+#diet-menu,
+#infos {
+    display: none;
+}
+
+.site-footer-above-section-4 {
+    .widget-title {
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+}
+
+#icon-open-1,
+#icon-open-2 {
+    display: none;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+#icon-close-1,
+#icon-close-2 {
+    display: block;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.dropbtn {
+    background-color: transparent;
+    display: flex;
+    padding: 2rem 0;
+    width: 100%;
+    justify-content: center;
+    h3 {
+        font-family: freight-big-pro, serif;
+        font-size: 3.2rem;
+        font-weight: 600;
+        color: #FFEBE6;
+        width: 70%;
+        @include respond(phone) {
+            font-size: 4.5rem;
+        }
+    }
+}
+
+#showDiet {
+    border-top: 2px solid;
+    border-color: #FFEBE6;
+    border-bottom: 2px solid;
+}
+
+#showInfo {
+    border-top: 2px solid;
+    border-color: #FFEBE6;
+    border-bottom: 2px solid;
+}
+
+.no-border {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+#showDiet {
+    margin-top: 5rem;
+}
