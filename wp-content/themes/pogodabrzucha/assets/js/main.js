@@ -93,8 +93,9 @@ function showSlidesR(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-
-  slides[slideIndexR - 1].style.display = 'flex';
+  if (slides.length) {
+    slides[slideIndexR - 1].style.display = 'flex';
+  }
 }
 //slider reviews mobile
 var slideIndexM = 1;
@@ -118,8 +119,9 @@ function showSlidesM(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
-
-  slides[slideIndexM - 1].style.display = 'flex';
+  if (slides.length) {
+    slides[slideIndexM - 1].style.display = 'flex';
+  }
 }
 document.querySelectorAll('.delivery__inner input').forEach((item) => {
   console.log(item);

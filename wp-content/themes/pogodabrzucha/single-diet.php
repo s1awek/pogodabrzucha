@@ -21,8 +21,6 @@ get_header(); ?>
             <img class="diet-img" src="<?php echo esc_url($dietFirstImg['url']); ?>" alt="<?php echo esc_attr($dietFirstImg['alt']); ?>" />
         <?php endif; ?>
 
-
-
         <h2 class="diet-banner-header"><?php the_field('name_diet') ?></h2>
         <p class="diet-banner-price">od <?php the_field('kcal_v1_price') ?> zł</p>
 
