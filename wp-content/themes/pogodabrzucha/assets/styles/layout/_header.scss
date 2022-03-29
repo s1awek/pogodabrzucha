@@ -6,6 +6,7 @@
 
 .menu-link {
     font-size: 1.8rem;
+
     @include respond(small-desktop) {
         font-size: 1.7rem;
     }
@@ -17,10 +18,12 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+
         @include respond(phone) {
             background-image: none;
         }
     }
+
     .sub-menu {
         li {
             background-image: none;
@@ -31,6 +34,7 @@
 .customer-navi {
     display: flex;
     column-gap: 2rem;
+
     &_order {
         background-color: #583337;
         border-radius: 35px;
@@ -38,33 +42,41 @@
         margin-left: 1rem;
         display: flex;
         transition: all .5s;
+
         a {
             font-size: 2.2rem;
             padding: 0.2rem 3.2rem;
             font-weight: 500;
+
             @include respond(medium-phone) {
                 font-size: 2rem;
                 padding: 0.2rem 2.2rem;
             }
         }
+
         &:hover {
             transform: scale(1.1);
             background: radial-gradient(#6f2d37, #451a20);
             background-color: #583337;
         }
+
         a {
             color: $white;
+
             &:hover {
                 color: $white;
             }
         }
     }
+
     &__panel {
         border-radius: 35px;
         transition-delay: 0.5s;
+
         @include respond(phone) {
             display: none;
         }
+
         a {
             font-size: 2rem;
             padding: 0.3rem 3.2rem;
@@ -72,13 +84,29 @@
             font-weight: 500;
         }
     }
+
     &-navi {
         color: $main-brown;
     }
 }
 
+.main-header-menu .menu-item {
+    position: static;
+}
+
+.main-navigation ul {
+    position: static;
+    height: 100%;
+}
+
+.site-header-section .ast-builder-menu {
+    height: 100%;
+}
+
 .sub-menu {
     display: flex;
+
+
     li {
         .menu-link {
             display: flex !important;
@@ -86,9 +114,11 @@
             align-items: center;
             text-transform: initial;
             font-weight: 400;
+
             &:hover {
                 font-weight: 600;
             }
+
             img {
                 max-width: 30rem;
                 width: 100%;
@@ -107,6 +137,7 @@
         background-color: #d4e0e3;
         width: 100vw;
         left: -32rem;
+        height: auto;
     }
 }
 
@@ -115,15 +146,16 @@
 #menu-item-225:focus,
 #menu-item-225:target {
     .sub-menu {
-        left: -32rem;
+        left: 0;
         right: 0;
         justify-content: space-evenly;
-        top: 150%;
+        top: 100%;
     }
 }
 
 .site-logo-img {
     max-width: 22rem;
+
     @include respond(phone) {
         img {
             max-width: 20rem;
@@ -132,6 +164,7 @@
 }
 
 .ast-nav-menu {
+
     .page-item-57,
     .page-item-55,
     .page-item-473 {
@@ -165,13 +198,16 @@
     max-width: 100% !important;
     right: 0;
     background-color: transparent !important;
+
     .ast-mobile-popup-content {
         background-image: url(/wp-content/uploads/2022/03/mobile-bcg.png) !important;
         background-color: #ebf4f7 !important;
         background-position: top !important;
         margin-top: -1rem;
+
         li {
             padding: 0 3rem;
+
             .menu-link {
                 font-size: 4.1rem;
                 text-align: center;
@@ -182,14 +218,17 @@
             }
         }
     }
+
     #menu-item-637 {
         .menu-link {
             border-top: none !important;
         }
     }
+
     .ast-header-html {
         width: 100%;
     }
+
     .social {
         display: flex;
         justify-content: center;
@@ -197,13 +236,16 @@
         column-gap: 11rem;
         padding-bottom: 7rem;
     }
+
     .sub-menu {
         li {
             padding: 0;
+
             a {
                 font-size: 2.5rem;
                 border: none !important;
                 padding: 0 !important;
+
                 span {
                     display: none !important;
                 }

@@ -11,7 +11,7 @@
   <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides ">
+    <div class="mySlides d-none">
       <div class="slider-info " id="slide1">
 
         <div class="slider-price-div">
@@ -35,7 +35,7 @@
       </div>
       <div class="text"></div>
     </div>
-    <div class="mySlides ">
+    <div class="mySlides d-none">
       <div class="slider-info " id="slide2">
 
         <div class="slider-price-div">
@@ -59,7 +59,7 @@
       </div>
 
     </div>
-    <div class="mySlides ">
+    <div class="mySlides d-none">
       <div class="slider-info " id="slide3">
 
         <div class="slider-price-div fade">

@@ -2,13 +2,6 @@
 
 //scroll header
 jQuery(document).ready(function ($) {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 1) {
-      $('#masthead').addClass('sticky');
-    } else {
-      $('#masthead').removeClass('sticky');
-    }
-  });
   $('#showDiet').click(function () {
     $('#diet-menu').toggle(1000);
     $('#icon-open-2').toggle('display');
@@ -25,6 +18,42 @@ jQuery(document).ready(function ($) {
 
   $('#cookies_close').click(function () {
     $('#cookies').hide(1000);
+  });
+
+  const getHeaderHeight = () => {
+    return document.querySelector('#ast-desktop-header').getClientRects()[0].height;
+  };
+  const setSpacing = (val) => {
+    if (val) {
+      document.querySelector('#content').style.paddingTop = `${Math.floor(val)}px`;
+      document.querySelector('#masthead').classList.add('sticky');
+    } else {
+      document.querySelector('#content').style.paddingTop = '';
+      document.querySelector('#masthead').classList.remove('sticky');
+    }
+  };
+  let headerHeight = getHeaderHeight();
+  let scrolled = false;
+  window.addEventListener('resize', (e) => {
+    headerHeight = getHeaderHeight();
+    console.log(scrolled);
+    if (scrolled) {
+      setSpacing(headerHeight);
+    } else {
+      setSpacing();
+    }
+  });
+
+  window.addEventListener('scroll', (e) => {
+    if (window.scrollY) {
+      document.querySelector('body').classList.add('scrolled');
+      scrolled = true;
+      setSpacing(headerHeight);
+    } else {
+      document.querySelector('body').classList.remove('scrolled');
+      scrolled = false;
+      setSpacing();
+    }
   });
 });
 
@@ -2496,6 +2525,7 @@ function showSlides(n) {
     slides[i].querySelector('.slider-info').style.display = 'none';
     slides[i].querySelector('.slide-img').classList.add('slide-right');
     slides[i].querySelector('.slide-img').classList.remove('slide-left');
+    slides[i].classList.remove('d-none');
   }
   slides[slideIndex - 1].querySelector('.slider-info').style.display = 'block';
   slides[slideIndex - 1].querySelector('.slide-img').classList.add('slide-left');
