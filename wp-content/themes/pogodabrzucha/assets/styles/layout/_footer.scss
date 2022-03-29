@@ -6,7 +6,7 @@ footer {
     margin-left: auto;
     padding: 0 80px;
     margin-bottom: 46px;
-    min-height: 560px;
+    //min-height: 560px;
 
     @include respond(phone) {
         padding: 20px;

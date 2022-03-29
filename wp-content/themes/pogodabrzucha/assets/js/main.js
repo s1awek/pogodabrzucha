@@ -21,7 +21,11 @@ jQuery(document).ready(function ($) {
   });
 
   const getHeaderHeight = () => {
-    return document.querySelector('#ast-desktop-header').getClientRects()[0].height;
+    if (document.querySelector('#ast-desktop-header').getClientRects()[0]) {
+      return document.querySelector('#ast-desktop-header').getClientRects()[0].height;
+    } else {
+      return 0;
+    }
   };
   const setSpacing = (val) => {
     if (val) {
@@ -36,7 +40,6 @@ jQuery(document).ready(function ($) {
   let scrolled = false;
   window.addEventListener('resize', (e) => {
     headerHeight = getHeaderHeight();
-    console.log(scrolled);
     if (scrolled) {
       setSpacing(headerHeight);
     } else {
