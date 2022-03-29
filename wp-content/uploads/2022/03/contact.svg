@@ -1,0 +1,13 @@
+<svg version="1.1" viewBox="0 0 921.1 732.7"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="958.5" height="765.8" fill="#fff2ef" data-name="Rectangle 350"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(-.875 .485 -.485 -.875 1089 518.8)" data-name="Group 582">
+    <g clip-path="url(#clip-path)" data-name="Group 405">
+      <path transform="translate(0 -.001)" d="m253 725.3c-259.3-101.5-261.4-240-249.2-345.1s165.8-352.1 319-375.3 211.3 36.54 280 161.7 153.2 130 227.7 153 193.1 134 83.72 267.8-401.9 239.4-661.2 138" fill="#fff2ef" data-name="Path 209"/>
+    </g>
+  </g>
+</svg>

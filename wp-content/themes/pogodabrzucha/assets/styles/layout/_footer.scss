@@ -1,44 +1,77 @@
 footer {
-    padding-left: 20px;
-    padding-right: 20px;
+
+    margin-top: 100px;
+    max-width: 1806px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 80px;
+    margin-bottom: 46px;
+    min-height: 560px;
+
+    @include respond(phone) {
+        padding: 20px;
+    }
+
     .site-above-footer-wrap {
         border-radius: 40px;
         background-color: $main-brown !important;
         color: #FFEBE6;
         width: auto;
-        margin: 1rem 4rem 4rem 4rem;
+        padding-top: 92px;
+        padding-bottom: 65px;
+        padding-left: 150px;
+        padding-right: 90px;
+
+        @media screen and (max-width: 1350px) {
+            padding-left: 90px;
+        }
+
         @include respond(phone) {
             margin: 0;
+            padding: 47px 35px
         }
     }
+
     .menu-item {
         &:hover {
             background-image: none;
         }
     }
+
     .widget-title,
     .newsletter__title {
         font-family: freight-big-pro, serif;
-        font-size: 3.2rem;
+        font-size: 3rem;
         color: #FFEBE6;
         font-weight: 900;
+        white-space: nowrap;
+        margin-bottom: 42px;
+
         @include respond(small-desktop) {
             font-size: 2.8rem;
         }
+
         @include respond(tab-land) {
             text-align: center;
             font-size: 3.5rem;
         }
+
         @include respond(phone) {
             font-size: 4.5rem;
         }
     }
+
+    .newsletter__title {
+        margin-bottom: 0;
+    }
+
     .newsletter__text {
         @include respond(tab-land) {
             text-align: center;
             margin-top: 1rem;
         }
     }
+
     .form__row {
         @include respond(tab-land) {
             input {
@@ -50,14 +83,17 @@ footer {
             }
         }
     }
+
     p,
     a {
         color: $white;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 300;
+
         @include respond(phone) {
             font-size: 2rem;
         }
+
         &:hover,
         &:focus,
         &:focus-visible,
@@ -65,9 +101,16 @@ footer {
             color: #FFEBE6;
         }
     }
+
     a {
         @include respond(phone) {
             font-size: 3rem;
+        }
+    }
+
+    @media (max-width: 921px) {
+        aside.footer-widget-area.footer-widget-area-inner {
+            text-align: left !important;
         }
     }
 }
@@ -77,11 +120,14 @@ footer {
 }
 
 .widget-title:after {
-    content: url("/wp-content/uploads/2022/03/footer-title.png");
-    display: block;
-    height: 0.5rem;
-    top: 2rem;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 20px;
+    bottom: -10px;
+    background-color: #fff;
     position: absolute;
+    left: 0;
 }
 
 #newsletter_email {
@@ -94,6 +140,8 @@ footer {
     padding-left: 0;
     padding-bottom: 0.2rem;
     padding-top: 0;
+    width: 100%;
+
     @include respond(tab-land) {
         font-size: 2.1rem;
         padding-bottom: 1rem;
@@ -106,16 +154,20 @@ footer {
 
 .site-footer-above-section-5 {
     align-self: flex-end;
+
     img {
         max-width: 19.3rem;
         width: 100%;
+
         @include respond(phone) {
             max-width: 23rem;
         }
     }
+
     .copy-date {
         margin-top: 3.8rem;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+
         @include respond(phone) {
             font-size: 2.3rem;
         }
@@ -123,11 +175,39 @@ footer {
 }
 
 .site-above-footer-wrap[data-section="section-above-footer-builder"] .ast-builder-grid-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1250px) {
+        flex-direction: column;
+
+        .site-footer-section {
+            align-self: stretch;
+            justify-content: flex-start;
+        }
+    }
+
     @include respond(big-desktop) {
-        max-width: 90% !important;
+        //max-width: 90% !important;
         margin: 0 auto;
     }
-    max-width: 95%;
+
+    max-width: 100%;
+}
+
+
+
+.site-footer-section-1 {
+    max-width: 292px;
+
+    @media screen and (max-width: 1250px) {
+        margin-bottom: 50px !important;
+    }
+
+    @include respond(tab-land) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .footer_social {
@@ -135,11 +215,14 @@ footer {
     justify-content: flex-start;
     margin-top: 2rem;
     width: 100%;
-    @include respond(phone) {
+
+    @include respond(tab-land) {
         padding: 4rem 0 6rem 0;
     }
+
     &-img {
         width: 50%;
+
         @include respond(phone) {
             text-align: center;
         }
@@ -149,16 +232,26 @@ footer {
 #menu-footer-menu-diety,
 #menu-footer-menu-informacje {
     .menu-link {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 
 .newsletter_submit {
     padding-top: 2rem;
+
     @include respond(tab-land) {
         margin-bottom: 5rem;
+
     }
+
     a {
+        max-width: 244px;
+
+        @include respond(tab-land) {
+            margin: auto;
+
+        }
+
         @include respond(phone) {
             font-size: 3rem;
         }
@@ -170,8 +263,7 @@ footer {
 }
 
 .ast-builder-grid-row-container-inner {
-    margin-top: 8rem;
-    margin-bottom: 6rem;
+
     @include respond(phone) {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -182,12 +274,14 @@ footer {
     @include respond(big-desktop) {
         grid-column-gap: 8rem !important;
     }
+
     grid-column-gap: 5rem !important;
 }
 
 #block-4,
 #block-3 {
     display: none;
+
     @include respond(tab-land) {
         display: block;
     }
@@ -196,6 +290,7 @@ footer {
 #nav_menu-3,
 #nav_menu-2 {
     display: block;
+
     @include respond(tab-land) {
         display: none;
     }
@@ -234,14 +329,17 @@ footer {
     padding: 2rem 0;
     width: 100%;
     justify-content: center;
+
     h3 {
         font-family: freight-big-pro, serif;
         font-size: 3.2rem;
         font-weight: 600;
         color: #FFEBE6;
         width: 70%;
+
         @include respond(phone) {
             font-size: 4.5rem;
+            text-align: center;
         }
     }
 }
