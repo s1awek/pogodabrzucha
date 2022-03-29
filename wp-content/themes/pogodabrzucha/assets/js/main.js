@@ -60,6 +60,11 @@ jQuery(document).ready(function ($) {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  let splide = new Splide('.splide');
+  splide.mount();
+});
+
 function showTarget(val) {
   var popup = document.getElementById('popup');
   popup.style.visibility = 'visible';
@@ -2471,12 +2476,15 @@ function getVal() {
     '55-330',
     '34-300',
   ];
+  function capitalize(s) {
+    return s[0].toUpperCase() + s.slice(1);
+  }
 
   const code = document.querySelector('#postal').value;
   const city = document.querySelector('#city').value;
 
   let isOkCode = codes.includes(code);
-  let isOkCity = cities.includes(city);
+  let isOkCity = cities.includes(capitalize(city));
 
   strinfCode = String(code);
   strinfCity = String(city);

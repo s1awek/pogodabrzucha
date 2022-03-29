@@ -138,20 +138,40 @@ section {
     padding-right: 0 !important;
 }
 
+@media (max-width: 938px) {
+    #ast-desktop-header {
+        display: none;
+    }
+
+    #masthead .ast-mobile-header-wrap .ast-primary-header-bar,
+    #masthead .ast-mobile-header-wrap .ast-below-header-bar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .d-none {
     display: none !important;
 }
 
-::-webkit-input-placeholder {}
+// ::placeholder {
+//     color: #58232B;
+// }
 
-:-moz-placeholder {
-    /* Firefox 18- */
+// ::-webkit-input-placeholder {
+//     color: #58232B;
+// }
 
-}
+// :-moz-placeholder {
+//     /* Firefox 18- */
+//     color: #58232B;
+// }
 
-::-moz-placeholder {
-    /* Firefox 19+ */
+// ::-moz-placeholder {
+//     /* Firefox 19+ */
+//     color: #58232B;
+// }
 
-}
-
-:-ms-input-placeholder {}
+// :-ms-input-placeholder {
+//     color: #58232B;
+// }

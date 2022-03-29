@@ -15,106 +15,115 @@ get_header(); ?>
 
 <?php include 'slider.php' ?>
 <section class="section-reviews review-web-view">
-    <div class="section-reviews__avarage">
-        <h3> Średnia ocena </h3>
-        <p> 4.8/5 </p>
-        <img src="/wp-content/uploads/2022/03/stars.png">
-    </div>
-    <div class="section-reviews__row fade section-reviews__row--desc">
-        <div class="section-reviews__row-item">
-            <div class="section-reviews__row-item--stars">
-                <p> 5/5 </p>
-                <img src="/wp-content/uploads/2022/03/stars.png">
+    <div class="section-reviews__inner">
+        <div class="section-reviews__avarage">
+            <h3> Średnia ocena </h3>
+            <p> 4.8/5 </p>
+            <img src="/wp-content/uploads/2022/03/stars.png">
+        </div>
+        <div class="section-reviews__row fade section-reviews__row--desc">
+            <div class="section-reviews__row-item">
+                <div class="section-reviews__row-item--stars">
+                    <p> 5/5 </p>
+                    <img src="/wp-content/uploads/2022/03/stars.png">
+                </div>
+                <div class="section-reviews__row-item--txt">
+                    <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
+                        był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
+                    <p class="bold-txt">Kinga Kryńska</p>
+                </div>
             </div>
-            <div class="section-reviews__row-item--txt">
-                <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
-                    był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
-                <p class="bold-txt">Kinga Kryńska</p>
+            <div class="section-reviews__row-item">
+                <div class="section-reviews__row-item--stars">
+                    <p> 5/5 </p>
+                    <img src="/wp-content/uploads/2022/03/stars.png">
+                </div>
+                <div class="section-reviews__row-item--txt">
+                    <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
+                        był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
+                    <p class="bold-txt">Kinga Kryńska</p>
+                </div>
+            </div>
+            <div class="section-reviews__row-item">
+                <div class="section-reviews__row-item--stars">
+                    <p> 5/5 </p>
+                    <img src="/wp-content/uploads/2022/03/stars.png">
+                </div>
+                <div class="section-reviews__row-item--txt">
+                    <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
+                        był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
+                    <p class="bold-txt">Kinga Kryńska</p>
+                </div>
+            </div>
+            <div class="section-reviews__controler">
+                <a class="next-r " onclick="plusSlidesR(1)"><img src="/wp-content/uploads/2022/03/Component-17-–-13.png"></a>
+
             </div>
         </div>
-        <div class="section-reviews__row-item">
-            <div class="section-reviews__row-item--stars">
-                <p> 5/5 </p>
-                <img src="/wp-content/uploads/2022/03/stars.png">
+        <div class="section-reviews__row fade section-reviews__row--desc">
+            <div class="section-reviews__controler">
+                <a class="next-r " onclick="plusSlidesR(-1)"><img src="/wp-content/uploads/2022/03/back.png"></a>
+
             </div>
-            <div class="section-reviews__row-item--txt">
-                <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
-                    był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
-                <p class="bold-txt">Kinga Kryńska</p>
+            <div class="section-reviews__row-item">
+                <div class="section-reviews__row-item--stars">
+                    <p> 4/5 </p>
+                    <img src="/wp-content/uploads/2022/03/stars.png">
+                </div>
+                <div class="section-reviews__row-item--txt">
+                    <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
+                        był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
+                    <p class="bold-txt">Kinga Kryńska</p>
+                </div>
             </div>
+            <div class="section-reviews__row-item">
+                <div class="section-reviews__row-item--stars">
+                    <p> 4.5/5 </p>
+                    <img src="/wp-content/uploads/2022/03/stars.png">
+                </div>
+                <div class="section-reviews__row-item--txt">
+                    <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
+                        był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
+                    <p class="bold-txt">Kinga Kryńska</p>
+                </div>
+            </div>
+            <div class="section-reviews__row-item">
+                <div class="section-reviews__row-item--stars">
+                    <p> 5/5 </p>
+                    <img src="/wp-content/uploads/2022/03/stars.png">
+                </div>
+                <div class="section-reviews__row-item--txt">
+                    <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
+                        był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
+                    <p class="bold-txt">Kinga Kryńska</p>
+                </div>
+            </div>
+            <div class="section-reviews__controler">
+                <a class="next-r " onclick="plusSlidesR(1)"><img src="/wp-content/uploads/2022/03/Component-17-–-13.png"></a>
+
+            </div>
+
+
         </div>
-        <div class="section-reviews__row-item">
-            <div class="section-reviews__row-item--stars">
-                <p> 5/5 </p>
-                <img src="/wp-content/uploads/2022/03/stars.png">
+        <div class="section-reviews__row fade section-reviews__row--desc">
+            <div class="section-reviews__controler">
+                <a class="next-r " onclick="plusSlidesR(-1)"><img src="/wp-content/uploads/2022/03/back.png"></a>
+
             </div>
-            <div class="section-reviews__row-item--txt">
-                <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
-                    był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
-                <p class="bold-txt">Kinga Kryńska</p>
-            </div>
-        </div>
-        <div class="section-reviews__controler">
-            <a class="next-r " onclick="plusSlidesR(1)"><img src="/wp-content/uploads/2022/03/Component-17-–-13.png"></a>
 
         </div>
     </div>
-    <div class="section-reviews__row fade section-reviews__row--desc">
-        <div class="section-reviews__controler">
-            <a class="next-r " onclick="plusSlidesR(-1)"><img src="/wp-content/uploads/2022/03/back.png"></a>
-
-        </div>
-        <div class="section-reviews__row-item">
-            <div class="section-reviews__row-item--stars">
-                <p> 4/5 </p>
-                <img src="/wp-content/uploads/2022/03/stars.png">
-            </div>
-            <div class="section-reviews__row-item--txt">
-                <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
-                    był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
-                <p class="bold-txt">Kinga Kryńska</p>
-            </div>
-        </div>
-        <div class="section-reviews__row-item">
-            <div class="section-reviews__row-item--stars">
-                <p> 4.5/5 </p>
-                <img src="/wp-content/uploads/2022/03/stars.png">
-            </div>
-            <div class="section-reviews__row-item--txt">
-                <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
-                    był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
-                <p class="bold-txt">Kinga Kryńska</p>
-            </div>
-        </div>
-        <div class="section-reviews__row-item">
-            <div class="section-reviews__row-item--stars">
-                <p> 5/5 </p>
-                <img src="/wp-content/uploads/2022/03/stars.png">
-            </div>
-            <div class="section-reviews__row-item--txt">
-                <p>Ja nie jestem w stanie wyjść z zachwytu kiedy jednego dnia jem deser i stwierdzam stanowczo, że to
-                    był najlepszy deser, a następnego dnia jest jeszcze lepszy ❤️ Rewelacja! Polecam gorąco!</p>
-                <p class="bold-txt">Kinga Kryńska</p>
-            </div>
-        </div>
-        <div class="section-reviews__controler">
-            <a class="next-r " onclick="plusSlidesR(1)"><img src="/wp-content/uploads/2022/03/Component-17-–-13.png"></a>
-
-        </div>
-
-
-    </div>
-    <div class="section-reviews__row fade section-reviews__row--desc">
-        <div class="section-reviews__controler">
-            <a class="next-r " onclick="plusSlidesR(-1)"><img src="/wp-content/uploads/2022/03/back.png"></a>
-
-        </div>
-
-    </div>
-
-
 
 </section>
+<div class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+        </ul>
+    </div>
+</div>
 <section class="section-reviews review-mobile-view">
     <div class="section-reviews__avarage">
         <h3> Średnia ocena </h3>
@@ -238,18 +247,24 @@ get_header(); ?>
 <?php include 'delivery.php' ?>
 
 <section class="section-started">
-    <div class="section-started__header">
-        <h2><?php the_field('how_it_starts_header'); ?></h2>
-        <img src="/wp-content/uploads/2022/03/burger-jablko.png" class="decoration decoration5">
-    </div>
-    <img src="/wp-content/uploads/2022/03/start3.png" class="decoration decoration3">
-    <img src="/wp-content/uploads/2022/03/start2.png" class="decoration decoration4">
+    <div class="section-started__inner">
+        <div class="section-started__header">
+            <h2><?php the_field('how_it_starts_header'); ?></h2>
+            <img src="/wp-content/uploads/2022/03/burger-jablko.png" class="decoration decoration5">
+        </div>
+        <img src="/wp-content/uploads/2022/03/start3.png" class="decoration decoration3">
+        <img src="/wp-content/uploads/2022/03/start2.png" class="decoration decoration4">
 
-    <div class="section-started__txt">
-        <p class="two-columns">
-            <?php the_field('how_it_started_text'); ?>
-        </p>
+        <div class="section-started__txt">
+            <div class="col col--1">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+            </div>
+            <div class="col col--2">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum</p>
+            </div>
+        </div>
     </div>
+
 
 </section>
 

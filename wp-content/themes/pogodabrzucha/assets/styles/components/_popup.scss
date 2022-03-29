@@ -8,37 +8,63 @@
     //  opacity: 0;
     visibility: hidden;
     transition: all .3s;
+
+    .close-btn {
+        padding: 0;
+        background-color: transparent;
+    }
+
     &:target {
         opacity: 1;
         visibility: visible;
     }
+
     &__content {
         position: absolute !important;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, -50%);
         width: 75%;
         max-width: 90rem;
         background-color: #fff;
         border-radius: 40px;
         text-align: center;
+        box-shadow: 0px 5px 26px rgba(89, 80, 82, 0.29);
+
+        @include respond(phone) {
+            width: 95%;
+        }
+
         h2 {
             padding-top: 3rem;
         }
+
         p {
-            font-size: 1.6rem;
-            max-width: 80%;
+            font-size: 16px;
             margin: 0 auto;
             padding-bottom: 2rem;
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+
         }
+
         &--buttons {
             display: flex;
             justify-content: center;
             column-gap: 3rem;
+
             a {
                 padding: 0.5rem 6rem;
+                line-height: 1.2;
+                text-align: center;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 46px;
             }
         }
+
         .DivSuccess {
             background-image: url(/wp-content/uploads/2022/03/popup.png);
             background-repeat: no-repeat;
@@ -47,6 +73,7 @@
             border-radius: 40px;
             min-height: 30rem;
         }
+
         .DivErr {
             min-height: 40rem;
             background-image: url(/wp-content/uploads/2022/03/popup-err.png);
@@ -54,7 +81,50 @@
             background-position: bottom;
             background-position-x: right;
             border-radius: 40px;
+
+            .popup__content--buttons {
+                display: flex;
+                flex-direction: column;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+
+                input {
+                    margin-bottom: 30px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid #58232B;
+                    height: 36px;
+                    background-color: #fff;
+                    font-size: 20px;
+                    color: #58232B;
+
+                    &::placeholder {
+                        color: #58232bb8;
+                    }
+
+                    &::-webkit-input-placeholder {
+                        color: #58232bb8;
+                    }
+
+                    &:-moz-placeholder {
+                        /* Firefox 18- */
+                        color: #58232bb8;
+                    }
+
+                    &::-moz-placeholder {
+                        /* Firefox 19+ */
+                        color: #58232bb8;
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: #58232bb8;
+                    }
+                }
+            }
+
             .popup__content--single-button {
+
                 a {
                     width: 50%;
                     margin: 0 auto;
@@ -62,13 +132,20 @@
             }
         }
     }
+
+    .popup-text {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
     .close-elem {
         position: absolute;
         top: 10%;
         right: 10%;
+
         @include respond(phone) {
-            top: 0;
-            right: 0;
+            top: 30px;
+            right: 30px;
         }
     }
 }

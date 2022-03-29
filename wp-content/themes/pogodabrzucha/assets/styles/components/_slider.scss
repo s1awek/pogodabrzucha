@@ -3,7 +3,7 @@
 }
 
 .section-slider {
-    margin: 0 4rem 1rem 4rem !important;
+    margin: 0 auto 1rem auto !important;
 }
 
 
@@ -13,18 +13,58 @@
     max-width: 100%;
     position: relative;
     margin: auto;
-    background-image: url(/wp-content/uploads/2022/03/Intersection-8.png);
-    background-size: cover;
     min-height: 60rem;
-    border-radius: 40px;
-    margin-bottom: 20rem;
+
+    margin-bottom: 140px;
     background-repeat: no-repeat;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 40px;
+        overflow: hidden;
+
+        &--mobile {
+            display: none;
+
+            @media screen and (max-width: 766px) {
+                display: block;
+            }
+        }
+
+        &--desktop {
+            display: block;
+
+            @media screen and (max-width: 766px) {
+                display: none;
+            }
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: 766px) {
+        margin-bottom: 250px;
+    }
+
+    @media screen and (max-width: 440px) {
+        margin-bottom: 150px;
+    }
 }
 
 
 /* Hide the images by default */
 
-.mySlides {}
+.mySlides {
+    height: 100%;
+}
 
 
 /* Next & previous buttons */
@@ -43,6 +83,10 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+
+    @media screen and (max-width: 766px) {
+        bottom: -18rem;
+    }
 }
 
 
@@ -132,12 +176,19 @@
     left: 70rem;
 
     @include respond(phone) {
-        position: inherit;
-        top: auto;
+        //position: inherit;
+        top: 46px;
         left: auto;
-        max-width: 40rem;
         margin: 0 auto;
-        padding-top: 10rem;
+        width: 196px;
+        height: 196px;
+        left: calc(50% - 98px);
+        z-index: 99;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     @include respond(medium-phone) {
@@ -145,26 +196,10 @@
     }
 }
 
-#slide1 {
-    background-image: url(/wp-content/uploads/2022/03/Path-18.png);
-}
-
-#slide2 {
-    background-image: url(/wp-content/uploads/2022/03/green.png);
-}
-
-#slide3 {
-    background-image: url(/wp-content/uploads/2022/03/chmurka-duza-slider.png);
-}
-
-#slide4 {
-    background-image: url(/wp-content/uploads/2022/03/Path-18a.png);
-}
-
 .slider-info {
     max-width: 85rem;
     position: absolute;
-    bottom: -9rem;
+    top: 6rem;
     background-position: center;
     background-size: cover;
     padding: 12rem 12rem 16rem 12rem;
@@ -173,9 +208,46 @@
     transition: all 2s;
 
     @include respond(phone) {
-        bottom: -6rem;
+        bottom: -24rem;
+        top: auto;
+    }
 
-        .diet-banner-header {
+    &__bg {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @include respond(phone) {
+            left: -5%;
+            right: -5%;
+        }
+
+        @media screen and (max-width: 500px) {
+            left: -15%;
+            right: -15%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+
+            @media screen and (max-width: 766px) {
+                position: relative;
+                top: -50px;
+            }
+        }
+    }
+
+
+
+
+    .diet-banner-header {
+        position: relative;
+
+        @include respond(phone) {
             font-size: 4rem;
             padding-bottom: 2rem;
         }
@@ -221,19 +293,12 @@
             position: absolute;
             top: 30%;
             left: 20%;
+
         }
 
         @include respond(phone) {
-            background-image: radial-gradient(#e87641, #e87641);
-            border-radius: 35px;
-            min-height: 7rem;
-            right: 7%;
-            top: 15%;
-
-            p {
-                color: $white;
-                top: 24%;
-            }
+            top: 8%;
+            right: 0;
         }
     }
 
@@ -242,6 +307,7 @@
         padding-top: 2rem;
         margin-bottom: 0;
         font-weight: 600;
+        position: relative;
 
         @include respond(phone) {
             padding-top: 0;
@@ -255,19 +321,20 @@
         font-size: 1.6rem;
         padding-top: 2rem;
         margin-bottom: 0;
+        position: relative;
     }
 
     .diet-banner-buttons {
         .gold-button {
             color: $header;
 
-            @include respond(phone) {
-                background-image: radial-gradient(#e87641, #e87641);
-                color: $white !important;
-                border: 1px solid #e87641;
-                padding: 0.2rem 2rem;
-                font-weight: 600;
-            }
+            // @include respond(phone) {
+            //     background-image: radial-gradient(#e87641, #e87641);
+            //     color: $white !important;
+            //     border: 1px solid #e87641;
+            //     padding: 0.2rem 2rem;
+            //     font-weight: 600;
+            // }
         }
     }
 
@@ -275,6 +342,7 @@
     .diet-banner-desc,
     .diet-banner-buttons {
         margin-left: 5rem;
+        position: relative;
 
         @include respond(phone) {
             margin-left: 0;

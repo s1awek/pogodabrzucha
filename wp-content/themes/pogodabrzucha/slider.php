@@ -9,11 +9,18 @@
 <section class="section-slider">
   <!-- Slideshow container -->
   <div class="slideshow-container">
-
+    <div class="slideshow-container__bg--desktop slideshow-container__bg">
+      <img src="/wp-content/uploads/2022/03/Intersection-8.png" alt="">
+    </div>
+    <div class="slideshow-container__bg--mobile slideshow-container__bg">
+      <img src="/wp-content/uploads/2022/03/Intersection-8.png" alt="">
+    </div>
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides d-none">
+    <div class="mySlides">
       <div class="slider-info " id="slide1">
-
+        <div class="slider-info__bg">
+          <img src="/wp-content/uploads/2022/03/Path-18.png" alt="">
+        </div>
         <div class="slider-price-div">
           <p> od <?php the_field('slider_price_1') ?> zł</p>
         </div>
@@ -37,7 +44,9 @@
     </div>
     <div class="mySlides d-none">
       <div class="slider-info " id="slide2">
-
+        <div class="slider-info__bg">
+          <img src="/wp-content/uploads/2022/03/green.png" alt="">
+        </div>
         <div class="slider-price-div">
           <p> od <?php the_field('slider_price_2') ?> zł</p>
         </div>
@@ -61,7 +70,9 @@
     </div>
     <div class="mySlides d-none">
       <div class="slider-info " id="slide3">
-
+        <div class="slider-info__bg">
+          <img src="/wp-content/uploads/2022/03/chmurka-duza-slider.png" alt="">
+        </div>
         <div class="slider-price-div fade">
           <p> od <?php the_field('slider_price_3') ?> zł</p>
         </div>
@@ -83,9 +94,11 @@
       </div>
 
     </div>
-    <div class="mySlides ">
+    <div class="mySlides d-none">
       <div class="slider-info " id="slide4">
-
+        <div class="slider-info__bg">
+          <img src="/wp-content/uploads/2022/03/Path-18a.png" alt="">
+        </div>
         <div class="slider-price-div fade">
           <p> od <?php the_field('slider_price_4') ?> zł</p>
         </div>

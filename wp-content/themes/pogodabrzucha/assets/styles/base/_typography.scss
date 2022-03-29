@@ -47,7 +47,6 @@
 
         @include respond(phone) {
             font-size: 6rem;
-            color: $header;
         }
     }
 }
