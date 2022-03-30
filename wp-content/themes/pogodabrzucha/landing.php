@@ -43,7 +43,7 @@ get_header(); ?>
       <div class="section-contact__data--box2">
         <div class="section-contact__form">
           <h2><?php the_field('lp_form_title'); ?></h2>
-          <?php echo do_shortcode('[contact-form-7 id="749" title="LP Form"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="774" title="LP Form"]'); ?>
 
         </div>
       </div>
