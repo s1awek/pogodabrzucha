@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Landing Page
+ * Template Name: Landing Page
  * @package WordPress
  * @subpackage astra
  */

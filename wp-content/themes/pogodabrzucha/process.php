@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Process
+ * Template Name: Process
  * @package WordPress
  * @subpackage astra
  */

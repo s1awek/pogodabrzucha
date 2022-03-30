@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Prices
+ * Template Name: Prices
  * @package WordPress
  * @subpackage astra
  */

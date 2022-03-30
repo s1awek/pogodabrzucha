@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Slider
+ * Template Name: Slider
  * @package WordPress
  * @subpackage astra
  */

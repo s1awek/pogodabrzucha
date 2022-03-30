@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Delivery
+ * Template Name: Delivery
  * @package WordPress
  * @subpackage astra
  */

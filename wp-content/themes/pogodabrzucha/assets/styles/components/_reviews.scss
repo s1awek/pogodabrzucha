@@ -1,0 +1,178 @@
+.section-reviews-slider {
+  @include respond(phone) {
+    background-color: #FFEBE6;
+  }
+
+  &__inner {
+    display: flex;
+    max-width: 100%;
+    background-color: #FFEBE6;
+    border-radius: 40px;
+    padding: 60px 70px;
+
+    @include respond(phone) {
+      background-color: #FFEBE6;
+      padding: 50px 0;
+    }
+  }
+
+  &__average {
+    display: flex;
+    flex-shrink: 0;
+
+    @include respond(phone) {
+      max-width: 50%;
+    }
+  }
+
+  .review-slider-wrap {
+    min-width: 0;
+
+  }
+
+}
+
+.review-slider {
+  .splide {
+    &__slide {
+      padding-left: 32px;
+      padding-right: 32px;
+
+      @media screen and (max-width: 1600px) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      @include respond(phone) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      background-color: transparent;
+
+      @media screen and (max-width: 1200px) {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+
+      &--prev {
+        left: -40px;
+
+        @media screen and (max-width: 1200px) {
+          left: -20px;
+        }
+      }
+
+      &--next {
+        right: -40px;
+
+        @media screen and (max-width: 1200px) {
+          right: -20px;
+        }
+      }
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__rating-wrap {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-right: 16px;
+      font-size: 18px;
+      color: #58232B;
+      font-weight: 300;
+      flex-shrink: 0;
+
+      @include respond(phone) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__stars-wrap {
+    display: flex;
+    max-width: 95%;
+    margin-bottom: 7px;
+
+    svg {
+      max-width: 20%;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #58232B;
+
+    @include respond(phone) {
+      font-size: 13px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #58232B;
+
+    @include respond(phone) {
+      font-size: 13px;
+    }
+  }
+}
+
+.average-review {
+  padding-right: 77px;
+
+  @include respond(small-desktop) {
+    padding-right: 42px;
+  }
+
+  @include respond(phone) {
+    padding-right: 22px;
+
+
+    svg {
+      max-width: 20%;
+    }
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 29px;
+    margin-bottom: 12px;
+
+    @include respond(phone) {
+      font-size: 24px;
+    }
+  }
+
+
+  p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #58232B;
+
+    @include respond(phone) {
+      font-size: 17px;
+    }
+  }
+}

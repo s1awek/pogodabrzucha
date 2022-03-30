@@ -61,8 +61,24 @@ jQuery(document).ready(function ($) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  let splide = new Splide('.splide');
-  splide.mount();
+  if (document.querySelectorAll('.splide').length) {
+    let splide = new Splide('.splide', {
+      perPage: 3,
+      perMove: 1,
+      type: 'loop',
+      pagination: false,
+      autoplay: true,
+      breakpoints: {
+        1600: {
+          perPage: 2,
+        },
+        1200: {
+          perPage: 1,
+        },
+      },
+    });
+    splide.mount();
+  }
 });
 
 function showTarget(val) {

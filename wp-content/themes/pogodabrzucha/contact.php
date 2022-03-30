@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Contact
+ * Template Name: Contact
  * @package WordPress
  * @subpackage astra
  */

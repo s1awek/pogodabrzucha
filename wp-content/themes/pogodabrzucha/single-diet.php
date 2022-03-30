@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template name: Single diet
+ * Template Name: Single diet
  * @package WordPress
  * @subpackage astra
  */
