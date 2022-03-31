@@ -287,7 +287,7 @@ get_header(); ?>
     </div>
     <div class="container">
         <!-- poniedziałek -->
-        <div class="filterDiv poniedzialek">
+        <div class="filterDiv poniedzialek show">
             <div class="menu-grid">
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
