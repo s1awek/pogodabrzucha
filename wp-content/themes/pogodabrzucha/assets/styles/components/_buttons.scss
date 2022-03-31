@@ -2,23 +2,29 @@
     border-radius: 35px;
     display: block;
     text-align: center;
+
     @include respond(tab-land) {
         padding: 1rem;
     }
+
     &--white {
         border: 1px solid #fff;
         font-size: 2.2rem;
     }
+
     &--gold {
         border: 1px solid $header;
+
         &:hover {
             border: 1px solid $gold;
         }
     }
+
     &--brown {
         border: 1px solid $header;
         font-size: 2.2rem;
     }
+
     &--solid {
         background-color: $gold;
         border: 1px solid $gold;
@@ -33,6 +39,9 @@
     position: relative;
     transition: all 0.5s ease-out;
     will-change: transform;
+    background-color: transparent;
+    color: $header;
+
     &::after {
         border-radius: 35px;
         content: "";
@@ -46,7 +55,9 @@
         transition: 0.2s transform ease-out;
         z-index: -1;
     }
+
     &:hover {
+        background-color: transparent;
         will-change: transform;
         border: 1px solid $header;
     }
@@ -57,9 +68,11 @@
         background-color: $gold;
         transform: translate(-100%, 0);
     }
+
     &:hover {
         color: $header;
     }
+
     &:hover::after {
         transform: translate(0, 0);
     }
@@ -70,9 +83,11 @@
         background-color: $header;
         transform: translate(-100%, 0);
     }
+
     &:hover {
         color: $white;
     }
+
     &:hover::after {
         transform: translate(0, 0);
     }
@@ -83,13 +98,16 @@
         background-color: $header;
         transform: translate(-100%, 0);
     }
+
     &:hover {
         color: $white;
         border: 1px solid $gold;
     }
+
     &:active {
         background-color: $header;
     }
+
     &:hover::after {
         transform: translate(2%, 3%);
     }
