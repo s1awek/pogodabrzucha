@@ -179,7 +179,7 @@ get_header(); ?>
     <div class="submit-button submit-button-v1">
         <img class="decoration decorationC1" src="/wp-content/uploads/2022/03/chmurka-ciemna-contact.png">
         <div class="submit-button__row">
-            <a href="#"> zamów swoją dietę </a>
+            <a href="/zamowienie/#/"> zamów swoją dietę </a>
             <img class="decoration decorationC2" src="/wp-content/uploads/2022/03/chmurka-button-gorna.png">
             <img class="decoration decorationC3" src="/wp-content/uploads/2022/03/chmurka-button-dolna-1.png">
         </div>
