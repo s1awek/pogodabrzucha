@@ -455,6 +455,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_6245b5295f24a",
+            "label": "Diet 1: kcal v4",
+            "name": "diet1_kcal_v4",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6228e059a067e",
             "label": "Diet 1: price v1",
             "name": "diet1_price_v1",
@@ -496,6 +515,25 @@
             "key": "field_6228de91a066e",
             "label": "Diet 1: price v3",
             "name": "diet1_price_v3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6245b55d5f24b",
+            "label": "Diet 1: price v4",
+            "name": "diet1_price_v4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -628,6 +666,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_6245b5735f24c",
+            "label": "Diet 2: kcal v4",
+            "name": "diet2_kcal_v4",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6228e2b1a0682",
             "label": "Diet 2 price v1",
             "name": "diet2_price_v1",
@@ -669,6 +726,25 @@
             "key": "field_6228e2c8a0683",
             "label": "Diet 2 price v3",
             "name": "diet2_price_v3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6245b57b5f24d",
+            "label": "Diet 2 price v4",
+            "name": "diet2_price_v4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -801,6 +877,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_6245b5875f24e",
+            "label": "Diet 3 kcal v4",
+            "name": "diet3_kcal_v4",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6228e2f6a0686",
             "label": "Diet 3 price v1",
             "name": "diet3_price_v1",
@@ -842,6 +937,25 @@
             "key": "field_6228e2e0a0684",
             "label": "Diet 3 price v3",
             "name": "diet3_price_v3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6245b5925f24f",
+            "label": "Diet 3 price v4",
+            "name": "diet3_price_v4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1049,5 +1163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648639383
+    "modified": 1648735645
 }

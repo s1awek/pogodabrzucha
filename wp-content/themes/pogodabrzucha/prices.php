@@ -61,7 +61,8 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="diet-box " onclick="filterSelection('odchudzajaca')">
+        <div class="diet-box " onclick="filterSelection('weganska')">
+
             <div class="diet-box__img">
                 <?php
                 $filter2 = get_field('diet_image-filter2');
@@ -74,7 +75,7 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="diet-box " onclick="filterSelection('weganska')">
+        <div class="diet-box " onclick="filterSelection('standard')">
 
             <div class="diet-box__img">
                 <?php
@@ -86,25 +87,11 @@ get_header(); ?>
             <div class="diet-box__txt">
                 <h4> Dieta <?php the_field('diet_3_name') ?></h4>
             </div>
-
-        </div>
-        <div class="diet-box " onclick="filterSelection('office')">
-
-            <div class="diet-box__img">
-                <?php
-                $filter4 = get_field('diet_image-filter4');
-                if (!empty($filter4)) : ?>
-                    <img src="<?php echo esc_url($filter4['url']); ?>" alt="<?php echo esc_attr($filter4['alt']); ?>" />
-                <?php endif; ?>
-            </div>
-            <div class="diet-box__txt">
-                <h4> Dieta <?php the_field('diet_4_name') ?></h4>
-            </div>
         </div>
 
     </div>
     <div class="container prices-filter">
-        <div class="filterDiv sportowa">
+        <div class="filterDiv sportowa show">
             <div class="signle-diet__title">
                 <h2>Dieta <?php the_field('diet_1_name') ?></h2>
             </div>
@@ -124,30 +111,38 @@ get_header(); ?>
                     <div class="kcal-part--1"> <?php the_field('diet1_kcal_v3') ?> kCal</div>
                     <div class="kcal-part--2"> <?php the_field('diet1_kcal_v3') ?> zł</div>
                 </div>
+                <div class="kcal--4">
+                    <div class="kcal-part--1"> <?php the_field('diet1_kcal_v4') ?> kCal</div>
+                    <div class="kcal-part--2"> <?php the_field('diet1_kcal_v4') ?> zł</div>
+                </div>
             </div>
 
         </div>
-        <div class=" filterDiv odchudzajaca">
+        <div class="filterDiv standard">
             <div class="signle-diet__title">
                 <h2>Dieta <?php the_field('diet_2_name') ?></h2>
-                <div class="kcal">
-                    <div class="kcal--1">
-                        <div class="kcal-part--1"> <?php the_field('diet2_kcal_v1') ?> kCal</div>
-                        <div class="kcal-part--2"> <?php the_field('diet2_price_v1') ?> zł</div>
-                    </div>
-
-                    <div class="kcal--2">
-                        <div class="kcal-part--1"> <?php the_field('diet2_kcal_v2') ?> kCal</div>
-                        <div class="kcal-part--2"> <?php the_field('diet2_price_v2') ?> zł</div>
-                    </div>
-
-                    <div class="kcal--3">
-                        <div class="kcal-part--1"> <?php the_field('diet2_kcal_v3') ?> kCal</div>
-                        <div class="kcal-part--2"> <?php the_field('diet2_price_v3') ?> zł</div>
-                    </div>
+            </div>
+            <div class="kcal">
+                <div class="kcal--1">
+                    <div class="kcal-part--1"> <?php the_field('diet2_kcal_v1') ?> kCal</div>
+                    <div class="kcal-part--2"> <?php the_field('diet2_price_v1') ?> zł</div>
                 </div>
 
+                <div class="kcal--2">
+                    <div class="kcal-part--1"> <?php the_field('diet2_kcal_v2') ?> kCal</div>
+                    <div class="kcal-part--2"> <?php the_field('diet2_price_v2') ?> zł</div>
+                </div>
+
+                <div class="kcal--3">
+                    <div class="kcal-part--1"> <?php the_field('diet2_kcal_v3') ?> kCal</div>
+                    <div class="kcal-part--2"> <?php the_field('diet2_price_v3') ?> zł</div>
+                </div>
+                <div class="kcal--4">
+                    <div class="kcal-part--1"> <?php the_field('diet2_kcal_v4') ?> kCal</div>
+                    <div class="kcal-part--2"> <?php the_field('diet2_price_v4') ?> zł</div>
+                </div>
             </div>
+
         </div>
         <div class="filterDiv weganska">
             <div class="signle-diet__title">
@@ -167,34 +162,14 @@ get_header(); ?>
                         <div class="kcal-part--1"> <?php the_field('diet3_kcal_v3') ?> kCal</div>
                         <div class="kcal-part--2"> <?php the_field('diet3_price_v3') ?> zł</div>
                     </div>
+                    <div class="kcal--4">
+                        <div class="kcal-part--1"> <?php the_field('diet3_kcal_v4') ?> kCal</div>
+                        <div class="kcal-part--2"> <?php the_field('diet3_price_v4') ?> zł</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-
-        <div class="filterDiv office">
-            <div class="signle-diet__title">
-                <h2>Dieta <?php the_field('diet_4_name') ?></h2>
-            </div>
-            <div class="kcal">
-                <div class="kcal--1">
-                    <div class="kcal-part--1"> <?php the_field('diet4_kcal_v1') ?> kCal</div>
-                    <div class="kcal-part--2"> <?php the_field('diet4_price_v1') ?> zł</div>
-                </div>
-
-                <div class="kcal--2">
-                    <div class="kcal-part--1"> <?php the_field('diet4_kcal_v2') ?> kCal</div>
-                    <div class="kcal-part--2"> <?php the_field('diet4_price_v2') ?> zł</div>
-                </div>
-
-                <div class="kcal--3">
-                    <div class="kcal-part--1"> <?php the_field('diet4_kcal_v3') ?> kCal</div>
-                    <div class="kcal-part--2"> <?php the_field('diet4_price_v3') ?> zł</div>
-                </div>
-            </div>
-
-        </div>
     </div>
 </section>
 
