@@ -712,44 +712,6 @@
       "maxlength": ""
     },
     {
-      "key": "field_622f033d53e59",
-      "label": "Slider: desc3",
-      "name": "slider_desc_3",
-      "type": "text",
-      "instructions": "",
-      "required": 0,
-      "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
-      "default_value": "",
-      "placeholder": "",
-      "prepend": "",
-      "append": "",
-      "maxlength": ""
-    },
-    {
-      "key": "field_622f034153e5b",
-      "label": "Slider: desc4",
-      "name": "slider_desc_4",
-      "type": "text",
-      "instructions": "",
-      "required": 0,
-      "conditional_logic": 0,
-      "wrapper": {
-        "width": "",
-        "class": "",
-        "id": ""
-      },
-      "default_value": "",
-      "placeholder": "",
-      "prepend": "",
-      "append": "",
-      "maxlength": ""
-    },
-    {
       "key": "field_62455b203f2b6",
       "label": "Obrazek w tle",
       "name": "hero_slider_bg",

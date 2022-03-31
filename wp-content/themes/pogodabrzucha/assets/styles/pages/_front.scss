@@ -182,7 +182,6 @@
 
             h2 {
                 font-size: 37px;
-
             }
         }
     }
@@ -254,6 +253,10 @@
         @include respond(phone) {
             display: none;
         }
+    }
+
+    h2 {
+        max-width: 770px;
     }
 }
 
