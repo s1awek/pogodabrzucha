@@ -275,30 +275,6 @@
             "mime_types": ""
         },
         {
-            "key": "field_622927d00c2d9",
-            "label": "Slider: image4",
-            "name": "slider_image4",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
             "key": "field_622927e20c2da",
             "label": "Slider: name1",
             "name": "slider_name1",
@@ -356,25 +332,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_622f024c53e43",
-            "label": "Slider: name4",
-            "name": "slider_name4",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_622f025853e44",
             "label": "Slider: kcal 1-v1",
             "name": "slider_kcal_1-v1",
@@ -416,6 +373,25 @@
             "key": "field_622f028953e46",
             "label": "Slider: kcal 1-v3",
             "name": "slider_kcal_1-v3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6245dfbdf4712",
+            "label": "Slider: kcal 1-v4",
+            "name": "slider_kcal_1-v4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -911,5 +887,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648712521
+    "modified": 1648746443
 }

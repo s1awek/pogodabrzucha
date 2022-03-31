@@ -531,6 +531,10 @@
 
         h2 {
             margin-left: 20rem;
+
+            @include respond(phone) {
+                margin-left: 0;
+            }
         }
 
         p {
