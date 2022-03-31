@@ -196,6 +196,10 @@
 .site-logo-img {
     max-width: 22rem;
 
+    img {
+        width: 100%;
+    }
+
     @include respond(phone) {
         img {
             max-width: 20rem;
