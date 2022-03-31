@@ -275,30 +275,6 @@
             "mime_types": ""
         },
         {
-            "key": "field_622927d00c2d9",
-            "label": "Slider: image4",
-            "name": "slider_image4",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
             "key": "field_622927e20c2da",
             "label": "Slider: name1",
             "name": "slider_name1",
@@ -340,25 +316,6 @@
             "key": "field_622f024653e42",
             "label": "Slider: name3",
             "name": "slider_name3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f024c53e43",
-            "label": "Slider: name4",
-            "name": "slider_name4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -584,82 +541,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_622f02e653e4f",
-            "label": "Slider: kcal 4-v1",
-            "name": "slider_kcal_4-v1",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f02f153e50",
-            "label": "Slider: kcal 4-v2",
-            "name": "slider_kcal_4-v2",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f02f653e51",
-            "label": "Slider: kcal 4-v3",
-            "name": "slider_kcal_4-v3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f02fd53e52",
-            "label": "Slider: kcal 4-v4",
-            "name": "slider_kcal_4-v4",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_622f030553e53",
             "label": "Slider: price1",
             "name": "slider_price_1",
@@ -717,25 +598,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_622f032553e56",
-            "label": "Slider: price4",
-            "name": "slider_price_4",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_622f032d53e57",
             "label": "Slider: desc1",
             "name": "slider_desc_1",
@@ -777,44 +639,6 @@
             "key": "field_622f033e53e5a",
             "label": "Slider: desc3",
             "name": "slider_desc_3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f033d53e59",
-            "label": "Slider: desc3",
-            "name": "slider_desc_3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f034153e5b",
-            "label": "Slider: desc4",
-            "name": "slider_desc_4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -911,5 +735,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648712521
+    "modified": 1648741604
 }
