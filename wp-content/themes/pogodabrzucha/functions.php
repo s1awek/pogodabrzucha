@@ -39,7 +39,7 @@ function create_posttype()
     );
 }
 // Hooking up our function to theme setup
-add_action('init', 'create_posttype');
+//add_action('init', 'create_posttype');
 /*
 * Creating a function to create our CPT
 */
@@ -97,7 +97,7 @@ function custom_post_type()
 * unnecessarily executed. 
 */
 
-add_action('init', 'custom_post_type', 0);
+//add_action('init', 'custom_post_type', 0);
 
 add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
 

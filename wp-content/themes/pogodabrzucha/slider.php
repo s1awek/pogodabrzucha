@@ -10,14 +10,14 @@
   <!-- Slideshow container -->
   <div class="slideshow-container">
     <div class="slideshow-container__bg--desktop slideshow-container__bg">
-      <img src="/wp-content/uploads/2022/03/Intersection-8.png" alt="">
+      <?php echo wp_get_attachment_image(get_field('hero_slider_bg'), 'full'); ?>
     </div>
     <div class="slideshow-container__bg--mobile slideshow-container__bg">
-      <img src="/wp-content/uploads/2022/03/Intersection-8.png" alt="">
+      <?php echo wp_get_attachment_image(get_field('hero_slider_bg_mobile'), 'full'); ?>
     </div>
     <!-- Full-width images with number and caption text -->
     <div class="mySlides">
-      <div class="slider-info " id="slide1">
+      <div class="slider-info" id="slide1">
         <div class="slider-info__bg">
           <img src="/wp-content/uploads/2022/03/Path-18.png" alt="">
         </div>

@@ -986,7 +986,7 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
                 "value": "single-diet.php"
             }
@@ -1008,5 +1008,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648296481
+    "modified": 1648713513
 }
