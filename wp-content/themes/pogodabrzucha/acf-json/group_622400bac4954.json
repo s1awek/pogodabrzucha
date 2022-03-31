@@ -560,82 +560,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_622f02e653e4f",
-            "label": "Slider: kcal 4-v1",
-            "name": "slider_kcal_4-v1",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f02f153e50",
-            "label": "Slider: kcal 4-v2",
-            "name": "slider_kcal_4-v2",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f02f653e51",
-            "label": "Slider: kcal 4-v3",
-            "name": "slider_kcal_4-v3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f02fd53e52",
-            "label": "Slider: kcal 4-v4",
-            "name": "slider_kcal_4-v4",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_622f030553e53",
             "label": "Slider: price1",
             "name": "slider_price_1",
@@ -677,25 +601,6 @@
             "key": "field_622f031d53e55",
             "label": "Slider: price3",
             "name": "slider_price_3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_622f032553e56",
-            "label": "Slider: price4",
-            "name": "slider_price_4",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -849,5 +754,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648747499
+    "modified": 1648748526
 }
