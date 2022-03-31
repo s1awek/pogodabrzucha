@@ -15,12 +15,13 @@ get_header(); ?>
 <section class="section-reviews-slider">
   <?php
   $average_rating = 0;
-  $counter = 1;
+  $counter = 0;
   if (have_rows('reviews_slider')) : ?>
     <?php while (have_rows('reviews_slider')) : the_row();
       $rating = get_sub_field('rating');
-      $average_rating += $rating;
+      $average_rating += intval($rating);
       $counter++;
+    //var_dump($counter, intval($rating), $average_rating);
     endwhile; ?>
   <?php
   endif;
