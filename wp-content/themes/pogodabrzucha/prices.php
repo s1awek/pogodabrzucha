@@ -61,7 +61,7 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="diet-box " onclick="filterSelection('weganska')">
+        <div class="diet-box " onclick="filterSelection('standard')">
 
             <div class="diet-box__img">
                 <?php
@@ -75,7 +75,7 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="diet-box " onclick="filterSelection('standard')">
+        <div class="diet-box " onclick="filterSelection('weganska')">
 
             <div class="diet-box__img">
                 <?php
