@@ -136,6 +136,7 @@ get_header(); ?>
                 <span><?php the_field('kcal_v1') ?></span>/
                 <span><?php the_field('kcal_v2') ?></span>/
                 <span><?php the_field('kcal_v3') ?></span>
+                <span><?php the_field('kcal_v4') ?></span>
                 <span> kCal</span>
             </div>
             <div class="diet-hero__text-wrap">

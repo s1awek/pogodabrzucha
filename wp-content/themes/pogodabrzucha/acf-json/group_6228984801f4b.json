@@ -356,6 +356,44 @@
             "maxlength": ""
         },
         {
+            "key": "field_6245d2af2b825",
+            "label": "Kcal version4",
+            "name": "kcal_v4",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6245d2c92b826",
+            "label": "Kcal version4 price",
+            "name": "kcal_v4_price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_622898b757ce7",
             "label": "Menu description",
             "name": "",
@@ -1212,5 +1250,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648725759
+    "modified": 1648743164
 }
