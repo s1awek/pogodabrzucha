@@ -104,16 +104,16 @@ get_header(); ?>
 
                 <div class="kcal--2">
                     <div class="kcal-part--1"> <?php the_field('diet1_kcal_v2') ?> kCal</div>
-                    <div class="kcal-part--2"> <?php the_field('diet1_kcal_v2') ?> zł</div>
+                    <div class="kcal-part--2"> <?php the_field('diet1_price_v2') ?> zł</div>
                 </div>
 
                 <div class="kcal--3">
                     <div class="kcal-part--1"> <?php the_field('diet1_kcal_v3') ?> kCal</div>
-                    <div class="kcal-part--2"> <?php the_field('diet1_kcal_v3') ?> zł</div>
+                    <div class="kcal-part--2"> <?php the_field('diet1_price_v3') ?> zł</div>
                 </div>
                 <div class="kcal--4">
                     <div class="kcal-part--1"> <?php the_field('diet1_kcal_v4') ?> kCal</div>
-                    <div class="kcal-part--2"> <?php the_field('diet1_kcal_v4') ?> zł</div>
+                    <div class="kcal-part--2"> <?php the_field('diet1_price_v4') ?> zł</div>
                 </div>
             </div>
 
