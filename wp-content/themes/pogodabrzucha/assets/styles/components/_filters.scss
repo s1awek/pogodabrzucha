@@ -15,8 +15,7 @@
 
         @include respond(phone) {
             background-image: none;
-            background-color: #ebf4f7;
-            border-radius: 0;
+            background-color: #FFEBE6;
         }
     }
 }
@@ -80,7 +79,7 @@
             border-radius: 34px;
 
             @include respond(phone) {
-                background-image: radial-gradient(#e87641, #ba4a16);
+                //background-image: radial-gradient(#e87641, #ba4a16);
                 padding: 0 6rem;
                 margin: 0 auto;
                 text-align: center;

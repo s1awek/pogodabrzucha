@@ -2560,7 +2560,6 @@ function showSlides(n) {
 }
 
 let intViewportWidth = window.innerWidth;
-console.log(intViewportWidth);
 if (intViewportWidth < 780) {
   //slider reviews mobile
   var slideIndexF = 1;
@@ -2571,26 +2570,25 @@ if (intViewportWidth < 780) {
     showSlidesF((slideIndexF += n));
   }
   // mobile diets
-  function showSlidesF(n) {
-    var i;
-    var slides = document.getElementsByClassName('diet-box');
-    // var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      slideIndexF = 1;
-    }
-    if (n < 1) {
-      slideIndexF = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
-    }
-    console.log(slides);
-    if (slides.length) {
-      slides[slideIndexF - 1].style.display = 'flex';
-    }
-  }
+  // function showSlidesF(n) {
+  //   var i;
+  //   var slides = document.getElementsByClassName('diet-box');
+  //   // var dots = document.getElementsByClassName("dot");
+  //   if (n > slides.length) {
+  //     slideIndexF = 1;
+  //   }
+  //   if (n < 1) {
+  //     slideIndexF = slides.length;
+  //   }
+  //   for (i = 0; i < slides.length; i++) {
+  //     slides[i].style.display = 'none';
+  //   }
+  //   console.log(slides);
+  //   if (slides.length) {
+  //     slides[slideIndexF - 1].style.display = 'flex';
+  //   }
+  // }
 }
-console.log(intViewportWidth);
 if (intViewportWidth < 780) {
   //mobile slider
   const slider = document.querySelector('#diets'),
@@ -2724,7 +2722,6 @@ function w3RemoveClass(element, name) {
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById('diets');
 if (btnContainer) {
-  console.log('test');
   var btns = btnContainer.getElementsByClassName('diet-box');
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', function () {

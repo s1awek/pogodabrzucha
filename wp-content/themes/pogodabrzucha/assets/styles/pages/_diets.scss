@@ -792,7 +792,7 @@
             h4 {
                 background-image: url(/wp-content/uploads/2022/03/Path-51.png);
                 background-repeat: no-repeat;
-                background-size: auto;
+                background-size: contain;
                 background-position: center;
             }
         }
@@ -818,21 +818,27 @@
         will-change: transform;
         transition: transform 0.3s ease-out;
         cursor: grab;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        overflow: auto;
+        justify-content: flex-start;
 
         .diet-box {
-            width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 1rem;
+            width: 65%;
         }
     }
 }
 
 .diet-filters {
     @include respond(phone) {
-        width: 90vw;
+        width: 100%;
         display: inline-block;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
