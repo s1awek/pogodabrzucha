@@ -75,7 +75,7 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="diet-box " onclick="filterSelection('weganska')">
+        <div class="diet-box " onclick="filterSelection('wegetarianska')">
 
             <div class="diet-box__img">
                 <?php
@@ -140,7 +140,7 @@ get_header(); ?>
             </div>
 
         </div>
-        <div class="filterDiv weganska">
+        <div class="filterDiv wegetarianska">
             <div class="signle-diet__title">
                 <h2>Dieta <?php the_field('diet_3_name') ?></h2>
                 <div class="kcal">

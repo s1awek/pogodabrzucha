@@ -30,8 +30,8 @@
           <?php the_field('slider_kcal_1-v3'); ?> / <?php the_field('slider_kcal_1-v4'); ?> kCal
         </p>
         <p class="diet-banner-desc fade"><?php the_field('slider_desc_1') ?></p>
-        <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="/diety/dieta-odchudzajaca">więcej info
-          </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+        <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="<?php the_field('slider:_slide_info_url_1'); ?>">więcej info
+          </a><a class="gold-button border-button border-button--solid" href="<?php the_field('slider_slide_order_url_1'); ?>">zamów</a></div>
       </div>
       <div class="slide-img">
         <?php
@@ -56,8 +56,8 @@
           <?php the_field('slider_kcal_2-v3'); ?> / <?php the_field('slider_kcal_2-v4'); ?> kCal
         </p>
         <p class="diet-banner-desc fade"><?php the_field('slider_desc_2') ?></p>
-        <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="/diety/dieta-weganska/">więcej info
-          </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+        <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="<?php the_field('slider:_slide_info_url_2'); ?>">więcej info
+          </a><a class="gold-button border-button border-button--solid" href="<?php the_field('slider_slide_order_url_2'); ?>">zamów</a></div>
       </div>
       <div class="slide-img">
         <?php
@@ -82,8 +82,8 @@
           <?php the_field('slider_kcal_3-v3'); ?> kCal
         </p>
         <p class="diet-banner-desc fade"><?php the_field('slider_desc_3') ?></p>
-        <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="/diety/dieta-sportowa/">więcej info
-          </a><a class="gold-button border-button border-button--solid" href="#">zamów</a></div>
+        <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="<?php the_field('slider:_slide_info_url_3'); ?>">więcej info
+          </a><a class="gold-button border-button border-button--solid" href="<?php the_field('slider_slide_order_url_3'); ?>">zamów</a></div>
       </div>
       <div class="slide-img">
         <?php
