@@ -205,7 +205,7 @@ get_header(); ?>
         <div class="price__order-test-txt">
             <h2><?php the_field('pricing_test_header') ?></h2>
             <p><?php the_field('pricing_test_subheader') ?></p>
-            <a class="price__order-test-link" href="#">Zamów swój zestaw testowy</a>
+            <a class="price__order-test-link" href="/zamowienie/#/">Zamów swój zestaw testowy</a>
         </div>
     </div>
     <div class="half-flex web-view">
