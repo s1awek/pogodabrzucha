@@ -79,7 +79,7 @@
         <h2 class="diet-banner-header fade"><?php the_field('slider_name3') ?></h2>
         <p class="diet-banner-kcal">
           <?php the_field('slider_kcal_3-v1'); ?> / <?php the_field('slider_kcal_3-v2'); ?> /
-          <?php the_field('slider_kcal_3-v3'); ?> / <?php the_field('slider_kcal_3-v4'); ?> kCal
+          <?php the_field('slider_kcal_3-v3'); ?> kCal
         </p>
         <p class="diet-banner-desc fade"><?php the_field('slider_desc_3') ?></p>
         <div class="diet-banner-buttons fade"><a class="border-button border-button--white fill-button " href="/diety/dieta-sportowa/">więcej info
