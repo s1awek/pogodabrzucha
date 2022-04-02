@@ -18,6 +18,21 @@
     margin-bottom: 180px;
     background-repeat: no-repeat;
 
+    .free-delivery {
+        position: absolute;
+        bottom: -220px;
+        left: 0;
+        right: 0;
+
+        @include respond(small-desktop) {
+            bottom: -100px;
+        }
+
+        @include respond(phone) {
+            bottom: -270px;
+        }
+    }
+
     &__bg {
         position: absolute;
         top: 0;
