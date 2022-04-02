@@ -17,9 +17,15 @@ jQuery(document).ready(function ($) {
   });
 
   $('#cookies_close').click(function () {
-    $('#cookies').hide(1000);
+    $('#cook-popup').hide(1000);
   });
-
+  $('#okbutton').click(function () {
+    Cookies.set('cookie', true, { expires: 365 });
+    $('#cook-popup').hide(1000);
+  });
+  if (!Cookies.get('cookie')) {
+    $('#cook-popup').removeClass('d-none');
+  }
   const getHeaderHeight = () => {
     if (document.querySelector('#ast-desktop-header').getClientRects()[0]) {
       return document.querySelector('#ast-desktop-header').getClientRects()[0].height;

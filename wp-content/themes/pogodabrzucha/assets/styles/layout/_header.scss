@@ -145,19 +145,19 @@
 
     .ast-mobile-popup-drawer .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle {
         right: 20px;
-        top: 48px !important;
-        width: 40px;
-        height: 40px;
+        top: 40px !important;
+        width: 30px;
+        height: 30px;
 
         .icon-arrow {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             display: block;
 
             svg {
                 margin: 0;
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
             }
         }
     }
@@ -261,7 +261,7 @@
             padding: 0 3rem;
 
             .menu-link {
-                font-size: 4.1rem;
+                font-size: 20px;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: 600 !important;
