@@ -971,11 +971,15 @@
                 right: 8px;
             }
 
-            g path,
-            g rect,
-            text {
-                fill: #A56559;
+            .page-id-275 & {
+
+                g path,
+                g rect,
+                text {
+                    fill: #A56559;
+                }
             }
+
         }
 
         &.no-badge {
