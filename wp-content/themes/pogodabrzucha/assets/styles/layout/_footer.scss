@@ -40,7 +40,7 @@ footer {
 
     .widget-title,
     .newsletter__title {
-        font-family: freight-big-pro, serif;
+        font-family: 'FreightBig Pro', serif;
         font-size: 3rem;
         color: #FFEBE6;
         font-weight: 900;
@@ -99,6 +99,13 @@ footer {
         &:focus-visible,
         &:visited {
             color: #FFEBE6;
+        }
+    }
+
+    .dropbtn {
+        p {
+            margin-bottom: 0;
+            display: flex;
         }
     }
 
@@ -250,7 +257,7 @@ footer {
 
     }
 
-    a {
+    button {
         max-width: 244px;
 
         @include respond(tab-land) {
@@ -260,6 +267,7 @@ footer {
 
         @include respond(phone) {
             font-size: 3rem;
+
         }
     }
 }
@@ -337,7 +345,7 @@ footer {
     justify-content: center;
 
     h3 {
-        font-family: freight-big-pro, serif;
+        font-family: 'FreightBig Pro', serif;
         font-size: 3.2rem;
         font-weight: 600;
         color: #FFEBE6;

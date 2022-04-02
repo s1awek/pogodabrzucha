@@ -30,7 +30,9 @@
             @include respond(phone) {
                 text-align: center;
                 margin: 0 auto;
-                font-weight: 600;
+                font-weight: 500;
+                margin-bottom: 30px;
+                max-width: 300px;
             }
         }
 
@@ -261,6 +263,7 @@
 
             @include respond(phone) {
                 width: 100%;
+                padding-bottom: 70px;
             }
         }
 
@@ -286,6 +289,10 @@
                 font-weight: 600;
                 position: relative;
 
+                @include respond(phone) {
+                    font-size: 17px;
+                }
+
                 span {
                     display: block;
                     font-size: 2.6rem;
@@ -294,10 +301,14 @@
 
             a {
                 font-size: 52px;
-                font-family: freight-big-pro, serif;
+                font-family: 'FreightBig Pro', serif;
                 display: block;
                 font-weight: 900;
                 line-height: 1.2;
+
+                @include respond(phone) {
+                    font-size: 25px;
+                }
             }
 
             .decorationTel1,
@@ -324,6 +335,10 @@
         color: $header;
         font-weight: 500;
         font-size: 26px;
+
+        @include respond(phone) {
+            font-size: 13px;
+        }
     }
 
     .decorationCT {
