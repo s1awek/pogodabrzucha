@@ -569,8 +569,11 @@
     }
 
     .menu-grid__meal-desc {
+        padding-top: 6%;
+
         @include respond(phone) {
             text-align: center;
+            padding-top: 0;
         }
 
         &--name {
