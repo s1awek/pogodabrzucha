@@ -257,6 +257,11 @@ footer {
 
     }
 
+    @include respond(phone) {
+        width: 100%;
+
+    }
+
     button {
         max-width: 244px;
 
