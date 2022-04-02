@@ -6,16 +6,15 @@
             <h2>Pewnie!</h2>
             <p>Kliknij zamów i ciesz się pogodą brzucha.</p>
             <div class="popup__content--buttons">
-                <a href="#" class="border-button border-button--solid">Zamów </a>
-                <a href="#" class="border-button border-button--brown"> Zobacz diety </a>
+                <a href="https://pogodabrzucha.test/#" class="border-button border-button--solid">Zamów </a>
+                <a href="/cennik/" class="border-button border-button--brown"> Zobacz diety </a>
             </div>
         </div>
         <div class="DivErr popup-text" id="DivErr">
             <h2> Jeszcze nie, ale... </h2>
             <p>zostaw nam swój adres email, a damy Ci znać kiedy dostawa będzie dostępna</p>
             <div class="popup__content--buttons">
-                <input placeholder="Wpisz adres e-mail" type="email">
-                <a href="#" class="border-button border-button--brown">Zapisz się!</a>
+                <?php echo do_shortcode('[contact-form-7 id="936" title="Popup wyszukiwarki"]'); ?>
             </div>
         </div>
     </div>
