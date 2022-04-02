@@ -177,7 +177,6 @@ function showSlidesM(n) {
   }
 }
 document.querySelectorAll('.delivery__inner input').forEach((item) => {
-  console.log(item);
   item.addEventListener('input', (e) => {
     item.closest('.delivery__inner').classList.remove('error');
   });
@@ -2506,10 +2505,6 @@ function getVal() {
   strinfCity = String(city);
   codeLenght = strinfCode.trim().length;
   cityLenght = strinfCity.trim().length;
-
-  console.log(cityLenght);
-  console.log(isOkCity);
-  console.log(isOkCode);
 
   let arrayLength = cities.length;
 

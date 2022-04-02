@@ -467,9 +467,9 @@
         width: 100%;
         justify-content: space-evenly;
 
-        @include respond(small-desktop) {
-            column-gap: 6rem;
-        }
+
+        column-gap: 6rem;
+
     }
 
     &__first,
@@ -961,14 +961,20 @@
 
         svg {
             position: absolute;
-            top: -60px;
-            right: 10px;
+            top: -96px;
+            right: -20px;
 
             @media screen and (max-width: 1000px) {
-                width: 63px;
-                height: 63px;
-                top: -40px;
-                right: 40px;
+                width: 100px;
+                height: 100px;
+                top: -66px;
+                right: 8px;
+            }
+
+            g path,
+            g rect,
+            text {
+                fill: #A56559;
             }
         }
 
