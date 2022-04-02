@@ -40,7 +40,6 @@
           <img src="<?php echo esc_url($slideImg1['url']); ?>">
         <?php endif; ?>
       </div>
-      <div class="text"></div>
     </div>
     <div class="mySlides d-none">
       <div class="slider-info " id="slide2">

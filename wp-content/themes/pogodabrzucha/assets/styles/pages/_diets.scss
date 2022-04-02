@@ -1238,7 +1238,7 @@
     &:hover {
         background-color: transparent;
         will-change: transform;
-        border: 1px solid $header;
+        border: 1px solid transparent;
     }
 
     &::after {

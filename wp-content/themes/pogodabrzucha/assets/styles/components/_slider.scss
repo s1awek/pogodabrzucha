@@ -268,6 +268,10 @@
 
         .border-button {
             color: $white;
+
+            &:hover {
+                border-color: transparent;
+            }
         }
 
         .gold-button {

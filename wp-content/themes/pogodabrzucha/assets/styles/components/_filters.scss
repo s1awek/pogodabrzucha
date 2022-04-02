@@ -8,15 +8,16 @@
 }
 
 .prices-filter {
+    border-radius: 40px;
+    background-image: linear-gradient(#ffebe6, #f8e8c4);
+
     .filterDiv {
-        border-radius: 40px;
-        background-image: linear-gradient(#ffebe6, #f8e8c4);
         min-height: 44.9rem;
 
-        @include respond(phone) {
-            background-image: none;
-            background-color: #FFEBE6;
-        }
+        // @include respond(phone) {
+        //     background-image: none;
+        //     background-color: #FFEBE6;
+        // }
     }
 }
 
@@ -47,13 +48,45 @@
     padding-top: 5rem;
 }
 
+.free-delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 59px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    svg {
+        margin-right: 12px;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 500;
+        color: $header;
+    }
+
+    @include respond(small-desktop) {
+        margin: 30px 0;
+
+        svg {
+            width: 40px;
+            height: auto;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
 .kcal {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 4rem;
 
     @include respond(phone) {
         flex-flow: column;
-        padding-bottom: 4rem;
     }
 
     &-part {
