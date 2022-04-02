@@ -196,581 +196,584 @@ get_header(); ?>
     </div>
 </section>
 <section class="menu-diet">
-    <div class="menu-diet__header">
+    <div class="menu-diet__inner">
+        <div class="menu-diet__header">
 
-        <h2><?php the_field('menu_header'); ?></h2>
+            <h2><?php the_field('menu_header'); ?></h2>
 
-        <p><?php the_field('menu_date'); ?></p>
-        <img class="decoration decorationM1" src="/wp-content/uploads/2022/03/menu-left.png">
-        <img class="decoration decorationM2" src="/wp-content/uploads/2022/03/menu-rigt.png">
+            <p><?php the_field('menu_date'); ?></p>
+            <img class="decoration decorationM1" src="/wp-content/uploads/2022/03/menu-left.png">
+            <img class="decoration decorationM2" src="/wp-content/uploads/2022/03/menu-rigt.png">
 
+        </div>
+
+        <!-- Control buttons -->
+        <div id="weekDays" class="weekDiets">
+            <button class="to-filtre border-button border-button--gold web-view fill-button--brown-trans active" onclick="filterSelection('poniedzialek')">
+                Poniedziałek</button>
+            <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('wtorek')">
+                Wtorek</button>
+            <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('sroda')"> Środa</button>
+            <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('czwartek')">
+                Czwartek</button>
+            <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('piatek')"> Piątek</button>
+            <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('sobota')"> Sobota</button>
+            <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('niedziela')">
+                Niedziela</button>
+            <button class="to-filtreM mobile-view border-button border-button--gold fill-button--brown-trans active-m" onclick="filterSelection('poniedzialek')"> Pon</button>
+            <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('wtorek')"> Wt</button>
+            <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('sroda')"> Śr</button>
+            <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('czwartek')"> Czw</button>
+            <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('piatek')"> Pt</button>
+            <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('sobota')"> Sob</button>
+            <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('niedziela')"> Nd</button>
+        </div>
+        <div class="container">
+            <!-- poniedziałek -->
+            <div class="filterDiv poniedzialek show">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('monday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('monday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('monday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('monday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('monday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- wtorek -->
+            <div class="filterDiv wtorek">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('tuesday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('tuesday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('tuesday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('tuesday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('tuesday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- środa -->
+            <div class="filterDiv sroda">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('wednesday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('wednesday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('wednesday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('wednesday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('wednesday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- czwartek -->
+            <div class="filterDiv czwartek">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('thursday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('thursday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('thursday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('thursday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('thursday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- piątek -->
+            <div class="filterDiv piatek">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('friday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('friday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('friday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('friday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('friday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- sobota -->
+            <div class="filterDiv sobota">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('saturday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('saturday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('saturday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('saturday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('saturday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- niedziela -->
+            <div class="filterDiv niedziela">
+                <div class="menu-grid">
+                    <!-- śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('sunday_breakfest'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- obiad -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/dinner.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Obiad </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('sunday_dinner'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kolacja -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/supper.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Kolacja </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('sunday_supper'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- drugie śniadanie -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/brekfest2.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Drugie śniadanie </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('sunday_second'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- podwieczorek -->
+                    <div class="menu-grid__meal-box">
+                        <div class="menu-grid__meal-image">
+                            <img src="/wp-content/uploads/2022/03/tea.svg">
+                        </div>
+                        <div class="menu-grid__meal-desc">
+                            <div class="menu-grid__meal-desc--name">
+                                <h4> Podwieczorek </h4>
+                            </div>
+                            <div class="menu-grid__meal-desc--txt">
+                                <p><?php the_field('sunday_tea'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
-    <!-- Control buttons -->
-    <div id="weekDays" class="weekDiets">
-        <button class="to-filtre border-button border-button--gold web-view fill-button--brown-trans active" onclick="filterSelection('poniedzialek')">
-            Poniedziałek</button>
-        <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('wtorek')">
-            Wtorek</button>
-        <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('sroda')"> Środa</button>
-        <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('czwartek')">
-            Czwartek</button>
-        <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('piatek')"> Piątek</button>
-        <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('sobota')"> Sobota</button>
-        <button class="to-filtre border-button border-button--gold fill-button--brown-trans web-view" onclick="filterSelection('niedziela')">
-            Niedziela</button>
-        <button class="to-filtreM mobile-view border-button border-button--gold fill-button--brown-trans active-m" onclick="filterSelection('poniedzialek')"> Pon</button>
-        <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('wtorek')"> Wt</button>
-        <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('sroda')"> Śr</button>
-        <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('czwartek')"> Czw</button>
-        <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('piatek')"> Pt</button>
-        <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('sobota')"> Sob</button>
-        <button class="to-filtreM border-button border-button--gold  fill-button--brown-trans mobile-view" onclick="filterSelection('niedziela')"> Nd</button>
-    </div>
-    <div class="container">
-        <!-- poniedziałek -->
-        <div class="filterDiv poniedzialek show">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('monday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('monday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('monday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('monday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('monday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
-
-        <!-- wtorek -->
-        <div class="filterDiv wtorek">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('tuesday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('tuesday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('tuesday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('tuesday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('tuesday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- środa -->
-        <div class="filterDiv sroda">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('wednesday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('wednesday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('wednesday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('wednesday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('wednesday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- czwartek -->
-        <div class="filterDiv czwartek">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('thursday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('thursday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('thursday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('thursday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('thursday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- piątek -->
-        <div class="filterDiv piatek">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('friday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('friday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('friday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('friday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('friday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- sobota -->
-        <div class="filterDiv sobota">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('saturday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('saturday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('saturday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('saturday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('saturday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- niedziela -->
-        <div class="filterDiv niedziela">
-            <div class="menu-grid">
-                <!-- śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('sunday_breakfest'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- obiad -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Obiad </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('sunday_dinner'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- kolacja -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Kolacja </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('sunday_supper'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- drugie śniadanie -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Drugie śniadanie </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('sunday_second'); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- podwieczorek -->
-                <div class="menu-grid__meal-box">
-                    <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.svg">
-                    </div>
-                    <div class="menu-grid__meal-desc">
-                        <div class="menu-grid__meal-desc--name">
-                            <h4> Podwieczorek </h4>
-                        </div>
-                        <div class="menu-grid__meal-desc--txt">
-                            <p><?php the_field('sunday_tea'); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
 </section>
 <?php include 'slider.php' ?>
 <?php include 'process.php' ?>
