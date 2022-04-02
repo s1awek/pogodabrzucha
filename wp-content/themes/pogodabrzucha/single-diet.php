@@ -154,10 +154,12 @@ get_header(); ?>
                     ?>
                         <?php
                         $icon = get_sub_field('icon');
+                        $ing = get_sub_field('ing');
                         $text = get_sub_field('text');
                         ?>
                         <li>
                             <img src="<?php echo $icon ?>" alt="">
+                            <p class="mb-0"><?php echo $ing ?></p>
                             <p class="mb-0"><?php echo $text ?></p>
                         </li>
                     <?php
@@ -292,7 +294,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -306,7 +308,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -320,7 +322,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -334,7 +336,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -348,7 +350,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -372,7 +374,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -386,7 +388,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -400,7 +402,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -414,7 +416,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -428,7 +430,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -449,7 +451,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -463,7 +465,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -477,7 +479,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -491,7 +493,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -505,7 +507,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -525,7 +527,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -539,7 +541,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -553,7 +555,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -567,7 +569,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -581,7 +583,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -602,7 +604,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -616,7 +618,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -630,7 +632,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -644,7 +646,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -658,7 +660,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -679,7 +681,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -693,7 +695,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -707,7 +709,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -721,7 +723,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -735,7 +737,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -757,7 +759,7 @@ get_header(); ?>
                 <!-- śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -771,7 +773,7 @@ get_header(); ?>
                 <!-- obiad -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/dinner.png">
+                        <img src="/wp-content/uploads/2022/03/dinner.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -785,7 +787,7 @@ get_header(); ?>
                 <!-- kolacja -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/supper.png">
+                        <img src="/wp-content/uploads/2022/03/supper.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -799,7 +801,7 @@ get_header(); ?>
                 <!-- drugie śniadanie -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/brekfest2.png">
+                        <img src="/wp-content/uploads/2022/03/brekfest2.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">
@@ -813,7 +815,7 @@ get_header(); ?>
                 <!-- podwieczorek -->
                 <div class="menu-grid__meal-box">
                     <div class="menu-grid__meal-image">
-                        <img src="/wp-content/uploads/2022/03/tea.png">
+                        <img src="/wp-content/uploads/2022/03/tea.svg">
                     </div>
                     <div class="menu-grid__meal-desc">
                         <div class="menu-grid__meal-desc--name">

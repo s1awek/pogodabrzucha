@@ -225,7 +225,7 @@ footer {
 
 .footer_social {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 2rem;
     width: 100%;
 
@@ -235,9 +235,12 @@ footer {
 
     &-img {
         width: 50%;
+        max-width: 140px;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
             text-align: center;
+            display: flex;
+            justify-content: center;
         }
     }
 }

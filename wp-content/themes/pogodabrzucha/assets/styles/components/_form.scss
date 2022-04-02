@@ -84,6 +84,14 @@
                 position: relative;
                 z-index: 2;
 
+                @include respond(phone) {
+                    .wpcf7-form-control-wrap {
+                        max-width: 300px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
                 .wpcf7-list-item {
                     margin-left: 0;
                 }

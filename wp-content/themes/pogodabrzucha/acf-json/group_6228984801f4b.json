@@ -238,6 +238,25 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_6248191ed2e2d",
+                    "label": "Ingredients",
+                    "name": "ing",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -1250,5 +1269,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648743164
+    "modified": 1648892204
 }
