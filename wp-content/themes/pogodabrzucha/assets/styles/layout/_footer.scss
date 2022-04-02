@@ -250,7 +250,7 @@ footer {
 }
 
 .newsletter_submit {
-    padding-top: 2rem;
+    padding: 2rem;
 
     @include respond(tab-land) {
         margin-bottom: 5rem;
