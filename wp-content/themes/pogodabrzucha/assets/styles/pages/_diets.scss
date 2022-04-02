@@ -539,6 +539,10 @@
 
         p {
             margin-right: 20rem;
+
+            @include respond(phone) {
+                margin-right: 0;
+            }
         }
     }
 }

@@ -2562,13 +2562,12 @@ function showSlides(n) {
 let intViewportWidth = window.innerWidth;
 if (intViewportWidth < 780) {
   //slider reviews mobile
-  var slideIndexF = 1;
-  showSlidesF(slideIndexF);
-
-  // Next/previous controls
-  function plusSlidesF(n) {
-    showSlidesF((slideIndexF += n));
-  }
+  // var slideIndexF = 1;
+  // showSlidesF(slideIndexF);
+  // // Next/previous controls
+  // function plusSlidesF(n) {
+  //   showSlidesF((slideIndexF += n));
+  // }
   // mobile diets
   // function showSlidesF(n) {
   //   var i;
