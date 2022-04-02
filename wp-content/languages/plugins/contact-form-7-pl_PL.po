@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-09 10:34:13+0000\n"
+"PO-Revision-Date: 2022-03-28 11:25:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,154 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: pl\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#. translators: 1: PHP function name, 2: version number, 3: alternative
+#. function name
+#: includes/functions.php:537
+msgid "Function %1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s! Use %3$s instead."
+msgstr "Funkcja %1$s jest <strong>przestarzała</strong>od wersji %2$s Contact Form 7! Zamiast tego proszę użyć: %3$s."
+
+#: includes/integration.php:25
+msgid "Spam protection"
+msgstr "Ochrona przed spamem"
+
+#. translators: Developer debugging message. 1: PHP function name, 2:
+#. Explanatory message, 3: Contact Form 7 version number.
+#: includes/functions.php:607
+msgid "Function %1$s was called incorrectly. %2$s %3$s"
+msgstr "Funkcja %1$s została wywołana nieprawidłowo. %2$s %3$s"
+
+#. translators: 1: blog name, 2: confirmation link
+#: modules/constant-contact/doi.php:76 modules/sendinblue/doi.php:84
+msgid ""
+"Hello,\n"
+"\n"
+"This is a confirmation email sent from %1$s.\n"
+"\n"
+"We have received your submission to our web form, according to which you have allowed us to add you to our contact list. But, the process has not yet been completed. To complete it, please click the following link.\n"
+"\n"
+"%2$s\n"
+"\n"
+"If it was not your intention, or if you have no idea why you received this message, please do not click on the link, and ignore this message. We will never collect or use your personal data without your clear consent.\n"
+"\n"
+"Sincerely,\n"
+"%1$s"
+msgstr ""
+"Cześć,\n"
+"\n"
+"Wiadomość e-mail z potwierdzeniem wysłana od %1$s.\n"
+"\n"
+"Otrzymaliśmy Twoje zgłoszenie do naszego formularza internetowego, zgodnie z którym pozwolono nam dodać Cię do naszej listy kontaktów. Ale proces nie został jeszcze zakończony. Aby go zakończyć, kliknij poniższy odnośnik.\n"
+"\n"
+"%2$s\n"
+"\n"
+"Jeśli nie było to Twoim zamiarem lub jeśli nie masz pojęcia, dlaczego otrzymujesz wiadomość, nie klikaj odnośnika i zignoruj proszę wiadomość. Nigdy nie będziemy gromadzić ani wykorzystywać Twoich danych osobowych bez Twojej wyraźnej zgody.\n"
+"\n"
+"Z poważaniem,\n"
+"%1$s"
+
+#. translators: %s: blog name
+#: modules/constant-contact/doi.php:70 modules/sendinblue/doi.php:78
+msgid "Opt-in confirmation from %s"
+msgstr "Potwierdzenie przystąpienia od %s"
+
+#: modules/constant-contact/contact-form-properties.php:170
+msgid "You can set up the Constant Contact integration here. For details, see %s."
+msgstr "Integrację Constant Contact można skonfigurować tutaj. Aby uzyskać szczegółowe informacje, proszę zapoznać się z %s."
+
+#: modules/stripe/stripe.php:313
+msgid "Complete payment"
+msgstr "Ukończ płatność"
+
+#: modules/stripe/stripe.php:298
+msgid "Proceed to checkout"
+msgstr "Przejdź do płatności"
+
+#: modules/stripe/stripe.php:186
+msgid "Payment is required. Please pay by credit card."
+msgstr "Wymagana płatność. Proszę zapłacić kartą kredytową."
+
+#: includes/integration.php:27
+msgid "Payments"
+msgstr "Płatności"
+
+#: modules/stripe/service.php:207
+msgid "Publishable Key"
+msgstr "Klucz do publikacji"
+
+#: modules/stripe/service.php:184
+msgid "Stripe is not available on this site. It requires an HTTPS-enabled site."
+msgstr "Stripe nie jest dostępny w witrynie. Wymaga obsługi protokółu HTTPS."
+
+#: modules/stripe/service.php:169
+msgid "Stripe is active on this site."
+msgstr "Stripe jest włączone w witrynie."
+
+#: modules/stripe/service.php:162
+msgid "Stripe integration"
+msgstr "Integracja ze Stripe"
+
+#: modules/stripe/service.php:159
+msgid "Stripe is a simple and powerful way to accept payments online. Stripe has no setup fees, no monthly fees, and no hidden costs. Millions of businesses rely on Stripe’s software tools to accept payments securely and expand globally. For details, see %s."
+msgstr "Stripe to prosty i skuteczny sposób na przyjmowanie płatności online. Stripe nie ma opłat instalacyjnych, miesięcznych ani ukrytych kosztów. Miliony firm polegają na narzędziach programowych Stripe, aby bezpiecznie akceptować płatności i rozwijać się na całym świecie. Aby uzyskać szczegółowe informacje, zobacz %s."
+
+#. translators: 1: first name, 2: last name
+#: modules/sendinblue/sendinblue.php:114
+msgctxt "personal name"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: includes/rest-api.php:458
+msgid "Unique identifier for the contact form."
+msgstr "Unikatowy identyfikator formularza kontaktu."
+
+#: includes/config-validator.php:447
+msgid "Dots are used in form-tag names."
+msgstr "Kropki są używane w nazwach znaczników formularza."
+
+#: admin/includes/welcome-panel.php:303
+msgid "Show welcome panel"
+msgstr "Pokaż panel powitalny"
+
+#: admin/includes/welcome-panel.php:300
+msgid "Welcome panel"
+msgstr "Panel powitalny"
+
+#: admin/includes/welcome-panel.php:169 modules/stripe/service.php:36
+msgid "Stripe"
+msgstr "Stripe"
+
+#: admin/includes/welcome-panel.php:168 modules/stripe/service.php:161
+msgid "https://contactform7.com/stripe-integration/"
+msgstr "https://contactform7.com/stripe-integration/"
+
+#. translators: 1: link labeled 'reCAPTCHA', 2: link labeled 'Stripe'
+#: admin/includes/welcome-panel.php:162
+msgid "With help from cloud-based machine learning, anti-spam services will protect your forms (%1$s). Even payment services are natively supported (%2$s)."
+msgstr "Dzięki uczeniu maszynowemu opartemu na chmurze usługi antyspamowe będą chronić formularze (%1$s). Nawet usługi płatności są natywnie obsługiwane (%2$s)."
+
+#. translators: 1: link labeled 'Sendinblue', 2: link labeled 'Constant
+#. Contact'
+#: admin/includes/welcome-panel.php:150
+msgid "Your contact forms will become more powerful and versatile by integrating them with external APIs. With CRM and email marketing services, you can build your own contact lists (%1$s and %2$s)."
+msgstr "Twoje formularze kontaktowe staną się bardziej wydajne i wszechstronne dzięki zintegrowaniu ich z zewnętrznymi interfejsami API. Dzięki usługom CRM i marketingu e-mailowego można tworzyć własne listy kontaktów (%1$s i %2$s)."
+
+#: admin/includes/welcome-panel.php:142
+msgid "You have strong allies to back you up."
+msgstr "Masz silnych sojuszników, którzy cię wspierają."
+
+#: admin/admin.php:508
+msgid "Integration with external APIs"
+msgstr "Integracja z zewnętrznymi API"
+
+#: admin/admin.php:507
+msgid "https://contactform7.com/integration-with-external-apis/"
+msgstr "https://contactform7.com/integration-with-external-apis/"
+
+#. translators: %s: link labeled 'Integration with external APIs'
+#: admin/admin.php:505
+msgid "You can expand the possibilities of your contact forms by integrating them with external services. For details, see %s."
+msgstr "Można rozszerzyć możliwości swoich formularzy kontaktowych, integrując je z usługami zewnętrznymi. Aby uzyskać szczegółowe informacje, zobacz %s."
 
 #: admin/admin.php:65 admin/admin.php:500
 msgid "Integration with External API"
@@ -551,6 +699,12 @@ msgstr "Wykryto %d błędów konfiguracji"
 #: admin/admin.php:152
 msgid "1 configuration error detected"
 msgstr "Wykryto jeden błąd konfiguracji"
+
+#. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
+#. name
+#: includes/functions.php:574
+msgid "Hook %1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s! Use %3$s instead."
+msgstr "Hook %1$s jest <strong>przestarzały</strong> od wersji %2$s! CF7. Zamiast tego użyj %3$s."
 
 #: admin/includes/welcome-panel.php:126
 msgid "Flamingo"
